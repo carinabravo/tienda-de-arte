@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
 
 const CartWidget = () => {
+
     return (
         <button type="button" className="btn position-relative">
             <img src="images/logo/cart4.svg" alt="Carrito" width="28" />
