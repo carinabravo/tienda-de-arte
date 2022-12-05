@@ -1,0 +1,26 @@
+.counter {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.countTitulo {
+  font-size: 17px;
+}
+
+.btnUno,
+.btnDos,
+.countUno {
+  width: 48px;
+  margin-left: 5px;
+  background-color: #3483fa;
+  color: #fffdfd;
+  font-size: 13px;
+}
+.btnTres {
+  width: 155px;
+  margin: 4px 0 0 5px;
+  background-color: #3483fa;
+  color: #fffdfd;
+  font-size: 13px;
+}
