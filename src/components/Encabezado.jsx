@@ -1,12 +1,13 @@
 import React from 'react';
+import './encabezado.css';
 
 const Encabezado = () => {
 
     return (
         <div className="container-fluid">
-            <div className="row align-items-center mb-2 bg-dark">
+            <div className="fondo row mb-1">
                 <div className="col-md-12 d-flex justify-content-center">
-                    <p className="mt-2" style={{ color: "white" }}>TIENDA ONLINE DE ARTE ABSTRACTO</p>
+                    <p className="texto-encabezado mt-3 mb-3">TIENDA ONLINE DE ARTE ABSTRACTO</p>
                 </div>
             </div>
         </div>
