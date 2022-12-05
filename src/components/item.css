@@ -1,0 +1,26 @@
+.card-img-top {
+  height: 260px;
+  width: auto;
+}
+
+.card {
+  width: 290px;
+  height: 420px;
+  box-shadow:0 20px 18px #9a9797;
+}
+
+.card-title {
+  font-size: 15px;
+}
+
+.card-price {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.btn-card {
+  margin-top: 10px;
+  width: 180px;
+  background-color: #3483fa;
+  color: #fffdfd;
+}
