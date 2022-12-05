@@ -1,0 +1,21 @@
+.img-unica {
+  box-shadow: 0 20px 18px #9a9797;
+  border-radius: 5px;
+}
+
+.item-title {
+  font-size: 28px;
+}
+
+.item-article {
+  font-size: 22px;
+}
+
+.item-description {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.item-price {
+  font-size: 25px;
+}
