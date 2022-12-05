@@ -1,0 +1,17 @@
+.carousel-caption {
+  text-align: start;
+  left: 5%;
+  top: 75%;
+}
+
+.texto-carousel {
+  font-size: 30px;
+}
+
+.texto-dos-carousel {
+  font-size: 16px;
+}
+
+.nombre-carousel {
+  font-size: 24px;
+}
