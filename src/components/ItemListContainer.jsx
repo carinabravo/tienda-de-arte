@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import arrayProductos from './json/products.json';
 import Loader from './Loader';
 import ItemList from './ItemList';
-import ItemCount from './ItemCount';
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([])
@@ -35,7 +34,6 @@ const ItemListContainer = () => {
                     ? <Loader />
                     : <ItemList items={items} />
             }
-            <ItemCount initial={1} stock={52} />
         </div>
     );
 }
