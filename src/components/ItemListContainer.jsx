@@ -1,20 +1,43 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
+import arrayProductos from './json/products.json';
+import Loader from './Loader';
+import ItemList from './ItemList';
+import ItemCount from './ItemCount';
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
+    const [items, setItems] = useState([])
+    const { id: category } = useParams();
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        setLoading(true);
+
+        const promesa = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                // filtra por categoría de productos sino muestra todos los productos.
+                resolve(category ? arrayProductos.filter(item => item.category === category) : arrayProductos);
+            }, 2000);
+
+        });
+
+        promesa.then((data) => {
+            setLoading(false)
+            setItems(data);
+        })
+    }, [category]);
+
+
     return (
         <div className="container">
-            <div className="row">
-                <div className="col-md-12 mb-2">
-                    <div className="alert alert-primary text-center" role="alert">
-                        {greeting}
-                    </div>
-                </div>
-
-            </div>
-
+            {
+                loading
+                    ? <Loader />
+                    : <ItemList items={items} />
+            }
+            <ItemCount initial={1} stock={52} />
         </div>
-
-    )
+    );
 }
 
 export default ItemListContainer;
