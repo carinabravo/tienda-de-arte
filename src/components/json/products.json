@@ -1,0 +1,193 @@
+[
+  {
+    "id": 1,
+    "title": "OBRA ALEGRÍA 50 x 50 cm",
+    "article": "Pintura abstracta.",
+    "category": "oleo",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura al óleo sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 30000,
+    "image": "/images/obras/Alegria.jpg",
+    "stock": 3,
+    "initial": 1
+  },
+
+  {
+    "id": 2,
+    "title": "OBRA CONEXIÓN 50 x 50 cm",
+    "article": "Pintura abstracta.",
+    "category": "oleo",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura al óleo sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 25000,
+    "image": "/images/obras/Conexión.jpg",
+    "stock": 6,
+    "initial": 1
+  },
+
+  {
+    "id": 3,
+    "title": "OBRA DELICADEZA 50 x 50 cm",
+    "article": "Pintura abstracta.",
+    "category": "oleo",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura al óleo sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 20000,
+    "image": "/images/obras/Delicadeza.jpg",
+    "stock": 1,
+    "initial": 1
+  },
+
+  {
+    "id": 4,
+    "title": "OBRA EMOCIONES 50 x 50 cm",
+    "article": "Pintura abstracta.",
+    "category": "oleo",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura al óleo sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 20000,
+    "image": "/images/obras/Emociones.jpg",
+    "stock": 3,
+    "initial": 1
+  },
+
+  {
+    "id": 5,
+    "title": "OBRA FANTASÍA 50 x 60 cm",
+    "article": "Pintura abstracta.",
+    "category": "acrilico",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura acrílica sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 35000,
+    "image": "/images/obras/Fantasía.jpg",
+    "stock": 2,
+    "initial": 1
+  },
+
+  {
+    "id": 6,
+    "title": "OBRA FRESCURA 50 x 60 cm",
+    "article": "Pintura abstracta.",
+    "category": "acrilico",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura acrílica sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 30000,
+    "image": "/images/obras/Frescura.jpg",
+    "stock": 5,
+    "initial": 1
+  },
+
+  {
+    "id": 7,
+    "title": "OBRA FUEGO 50 x 60 cm ",
+    "article": "Pintura abstracta.",
+    "category": "acrilico",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura acrílica sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 40000,
+    "image": "/images/obras/Fuego.jpg",
+    "stock": 2,
+    "initial": 1
+  },
+
+  {
+    "id": 8,
+    "title": "OBRA IDEAS 50 x 60 cm",
+    "article": "Pintura abstracta.",
+    "category": "acrilico",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura acrílicasobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 35000,
+    "image": "/images/obras/Ideas.jpg",
+    "stock": 1,
+    "initial": 1
+  },
+
+  {
+    "id": 9,
+    "title": "OBRA INFANCIA 50 x 70 cm",
+    "article": "Pintura abstracta.",
+    "category": "tecnica-mixta",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con técnica mixta sobre lienzo, la cual se conforma por la utilización de más de dos tipos de pinturas, como lo son el acrílico y el óleo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 45000,
+    "image": "/images/obras/Infancia.jpg",
+    "stock": 6,
+    "initial": 1
+  },
+
+  {
+    "id": 10,
+    "title": "OBRA INGENUIDAD 50 x 70 cm",
+    "article": "Pintura abstracta.",
+    "category": "tecnica-mixta",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con técnica mixta sobre lienzo, la cual se conforma por la utilización de más de dos tipos de pinturas, como lo son el acrílico y el óleo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 40000,
+    "image": "/images/obras/Ingenuidad.jpg",
+    "stock": 3,
+    "initial": 1
+  },
+
+  {
+    "id": 11,
+    "title": "OBRA INTENSIDAD 50 x 70 cm",
+    "article": "Pintura abstracta.",
+    "category": "tecnica-mixta",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con técnica mixta sobre lienzo, la cual se conforma por la utilización de más de dos tipos de pinturas, como lo son el acrílico y el óleo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 50000,
+    "image": "/images/obras/Intensidad.jpg",
+    "stock": 4,
+    "initial": 1
+  },
+
+  {
+    "id": 12,
+    "title": "OBRA OCÉANO 50 x 70 cm",
+    "article": "Pintura abstracta.",
+    "category": "tecnica-mixta",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con técnica mixta sobre lienzo, la cual se conforma por la utilización de más de dos tipos de pinturas, como lo son el acrílico y el óleo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 55000,
+    "image": "/images/obras/Océano.jpg",
+    "stock": 2,
+    "initial": 1
+  },
+
+  {
+    "id": 13,
+    "title": "OBRA PASIÓN 50 x 80 cm ",
+    "article": "Pintura abstracta.",
+    "category": "acuarela",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con acuarelas sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 60000,
+    "image": "/images/obras/Pasión.jpg",
+    "stock": 6,
+    "initial": 1
+  },
+
+  {
+    "id": 14,
+    "title": "OBRA PENSAMIENTOS 50 x 80 cm",
+    "article": "Pintura abstracta.",
+    "category": "acuarela",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con acuarelas sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 60000,
+    "image": "/images/obras/Pensamientos.jpg",
+    "stock": 4,
+    "initial": 1
+  },
+
+  {
+    "id": 15,
+    "title": "OBRA SINCERIDAD 50 x 80 cm",
+    "article": "Pintura abstracta.",
+    "category": "acuarela",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con acuarelas sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 65000,
+    "image": "/images/obras/Sinceridad.jpg",
+    "stock": 3,
+    "initial": 1
+  },
+
+  {
+    "id": 16,
+    "title": "OBRA TRANQUILIDAD 50 x 80 cm",
+    "article": "Pintura abstracta.",
+    "category": "acuarela",
+    "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con acuarelas sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
+    "price": 70000,
+    "image": "/images/obras/Tranquilidad.jpg",
+    "stock": 1,
+    "initial": 1
+  }
+]
