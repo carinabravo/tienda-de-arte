@@ -20,7 +20,7 @@ const ItemCount = ({ stock }) => {
     const onAdd = () => {
         if (stock > 0) {
 
-            console.log("Agregaste: " + count + " productos al carrito!");
+            // console.log("Agregaste: " + count + " productos al carrito!");
         }
     }
 
