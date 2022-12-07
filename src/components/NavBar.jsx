@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-10 mt-5 mb-5">
+                <div className="col-md-10 mt-4 mb-4">
                     <nav className="navbar navbar-expand-lg">
                         <div className="container">
                             <Link className="navbar-brand" to={"/"}><img src={"images/logo e iconos/logo.jpg"} alt="logo" width={350} /></Link>
