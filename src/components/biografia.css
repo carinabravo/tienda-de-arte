@@ -1,0 +1,13 @@
+.img-perfil {
+  box-shadow: 0 20px 18px #9a9797;
+  border-radius: 5px;
+}
+
+.title-perfil {
+  font-size: 28px;
+}
+
+.text-perfil {
+  font-size: 18px;
+  text-align: justify;
+}
