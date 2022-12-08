@@ -10,7 +10,7 @@ const ItemDetail = ({ item }) => {
 
     return (
         <div className="row">
-            <div className="col-md-5 offset-md-1 mb-5">
+            <div className="col-md-5 offset-md-1">
                 <img src={item.image} alt={item.title} className="img-unica img-fluid" width={400} />
             </div>
             <div className="col-md-5">
