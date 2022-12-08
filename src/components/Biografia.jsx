@@ -9,7 +9,7 @@ const Biografia = () => {
         <div className="container my-5">
             <div className="row">
                 <div className="col-md-5 offset-md-1">
-                    <img src={"/images/Danna Blenk/perfil.jpg"} alt="" className="img-perfil img-fluid" width={400} />
+                    <img src={"/images/Danna Blenk/perfil.jpg"} alt="artista" className="img-perfil img-fluid" width={400} />
                 </div>
                 <div className="col-md-5">
                     <h1 className="title-perfil">Danna Blenk</h1>
