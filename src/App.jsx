@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Error404 from "./components/Error404";
+import Biografia from "./components/Biografia";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path={"/"} element={<Inicio />} />
+        <Route path={"/biografia"} element={<Biografia />} />
         <Route path={"/category/:id"} element={<ItemListContainer />} />
         <Route path={"/item/:id"} element={<ItemDetailContainer />} />
         <Route path={"*"} element={<Error404 />} />
