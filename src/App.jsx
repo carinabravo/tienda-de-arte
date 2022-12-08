@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Encabezado from "./components/Encabezado";
@@ -9,6 +10,7 @@ import Footer from "./components/Footer";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Error404 from "./components/Error404";
+
 
 function App() {
 
