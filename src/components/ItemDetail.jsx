@@ -1,8 +1,12 @@
 import React from 'react';
 import './itemDetail.css';
 import ItemCount from './ItemCount';
+import { useNavigate } from 'react-router-dom';
 
 const ItemDetail = ({ item }) => {
+
+    const navigate = useNavigate();
+
 
     return (
         <div className="row">
@@ -16,8 +20,10 @@ const ItemDetail = ({ item }) => {
                 <h5 className="item-price"><b>$ {item.price}</b></h5>
                 <ItemCount stock={item.stock} />
             </div>
+            <div>
+                <button className="btn me-5" type="submit" onClick={() => navigate(-1)}><i className="bi bi-box-arrow-left" style={{ fontSize: "30px", color: "#716e6e" }}></i></button>
+            </div>
         </div>
-
     )
 }
 
