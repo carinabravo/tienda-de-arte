@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Encabezado from "./components/Encabezado";
 import NavBar from "./components/NavBar";
 import Carousel from "./components/Carousel";
+import Propaganda from "./components/Propaganda";
 import Promocion from "./components/Promocion";
 import Footer from "./components/Footer";
 import ItemListContainer from "./components/ItemListContainer";
@@ -34,10 +35,11 @@ function App() {
 }
 
 function Inicio() {
-  // solo se carga el carousel en el inicio
+  // solo se carga el carousel  y la propaganda en el inicio.
   return (
     <>
       <Carousel />
+      <Propaganda />
       <ItemListContainer />
     </>
   )
