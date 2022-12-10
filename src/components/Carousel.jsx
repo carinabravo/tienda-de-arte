@@ -17,25 +17,19 @@ const Carousel = () => {
                             <div className="carousel-item active" data-bs-interval="4000">
                                 <img src="images/Danna Blenk/1.jpg" className="d-block w-100" alt="foto artista 1" />
                                 <div className="carousel-caption d-none d-md-block">
-                                    <h3 className="texto-carousel"><b>¡BIENVENIDOS A MI TIENDA!</b></h3>
-                                    <p className="texto-dos-carousel">EN DONDE ENCONTRARÁS OBRAS DE ARTE ABSTRACTO</p>
-                                    <p className='nombre-carousel' >Danna Blenk</p>
+                                    <h3 className="texto-carousel"><b>TIENDA DE ARTE ABSTRACTO</b></h3>
                                 </div>
                             </div>
                             <div className="carousel-item" data-bs-interval="4000">
-                                <img src="images/Danna Blenk/3.jpg" className="d-block w-100" alt="foto artista 3" />
+                                <img src="images/Danna Blenk/2.jpg" className="d-block w-100" alt="foto artista 3" />
                                 <div className="carousel-caption d-none d-md-block">
                                     <h3 className="texto-carousel"><b>CADA OBRA ES ÚNICA</b></h3>
-                                    <p className="texto-dos-carousel">EL TIEMPO DE ENTREGA ESTIMADO ES DE 10 A 15 DÍAS</p>
-                                    <p className='nombre-carousel'>Danna Blenk</p>
                                 </div>
                             </div>
                             <div className="carousel-item" data-bs-interval="4000" >
-                                <img src="images/Danna Blenk/2.jpg" className="d-block w-100" alt="foto artista 2" />
+                                <img src="images/Danna Blenk/3.jpg" className="d-block w-100" alt="foto artista 2" />
                                 <div className="carousel-caption d-none d-md-block">
-                                    <h3 className='texto-carousel'><b>COMPRÁ Y REGALÁ ARTE ORIGINAL</b></h3>
-                                    <p className="texto-dos-carousel">CADA OBRA SE ENTREGA CON SU CERTIFICADO DE AUTENTICIDAD</p>
-                                    <p className='nombre-carousel'>Danna Blenk</p>
+                                    <h3 className='texto-carousel'><b>COMPRÁ ARTE ORIGINAL</b></h3>
                                 </div>
                             </div>
                         </div>
