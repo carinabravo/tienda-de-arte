@@ -31,7 +31,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura al óleo sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 20000,
     "image": "/images/obras/Delicadeza.jpg",
-    "stock": 1,
+    "stock": 2,
     "initial": 1
   },
 
@@ -187,7 +187,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con acuarelas sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 70000,
     "image": "/images/obras/Tranquilidad.jpg",
-    "stock": 1,
+    "stock": 5,
     "initial": 1
   }
 ]
