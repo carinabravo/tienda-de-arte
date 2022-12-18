@@ -26,7 +26,7 @@ const NavBar = () => {
                                         <NavLink className="nav-link" activeclassname="page" to={"/contacto"}>Contacto</NavLink>
                                     </li>
                                     <li className="nav-item dropdown me-5">
-                                        <a className="nav-link dropdown-toggle" href="#p" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Obras</a>
                                         <ul className="dropdown-menu">
                                             <NavLink className="dropdown-item" activeclassname="page" to={"/category/acrilico"}><img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette" width="18" />Acrílicos</NavLink>
