@@ -12,7 +12,7 @@ const Propaganda = () => {
                     <p className="text-propaganda3">El tiempo estimado de <b>entrega</b> de cada producto es de 10 a 15 dìas hábiles y se envían con su certificado de autenticidad firmado por la artista.</p>
                 </div>
                 <div className="col-md-2 offset-md-1">
-                    <img src="/images/Danna Blenk/propaganda.jpg" alt="" className="img-propaganda" />
+                    <img src="/images/Danna Blenk/propaganda.jpg" alt="propaganda" className="img-propaganda" />
                 </div>
             </div>
             <hr></hr>
