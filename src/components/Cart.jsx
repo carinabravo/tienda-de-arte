@@ -52,7 +52,7 @@ const Cart = () => {
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                                 <td className="align-middle" style={{ fontSize: "20px" }}><b>Total a pagar:</b></td>
-                                <td className="align-middle" style={{ fontSize: "px" }}><b>${sumaTotal()}</b></td>
+                                <td className="align-middle" style={{ fontSize: "20px" }}><b>${sumaTotal()}</b></td>
                                 <td className="align-middle text-end"><button className="btn btn-primary">Finalizar compra</button></td>
                             </tr>
                         </tbody>
