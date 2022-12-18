@@ -34,7 +34,9 @@ const ItemDetail = ({ item }) => {
                 <ItemCount stock={item.stock} onAdd={onAdd} />
             </div>
             <div>
-                <button className="btn me-5" type="submit" onClick={() => navigate(-1)}><i className="bi bi-box-arrow-left" style={{ fontSize: "30px", color: "#716e6e" }}></i></button>
+                <button className="btn me-5" type="submit" onClick={() => navigate(-1)}>
+                    <i className="bi bi-box-arrow-left" style={{ fontSize: "30px", color: "#716e6e" }}></i>
+                </button>
             </div>
         </div>
     )

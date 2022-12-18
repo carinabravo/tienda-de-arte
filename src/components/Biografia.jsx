@@ -9,7 +9,7 @@ const Biografia = () => {
         <div className="container my-5">
             <div className="row">
                 <div className="col-md-5 offset-md-1">
-                    <img src={"/images/Danna Blenk/perfil.jpg"} alt="artista" className="img-perfil img-fluid"/>
+                    <img src={"/images/Danna Blenk/perfil.jpg"} alt="artista" className="img-perfil img-fluid" />
                 </div>
                 <div className="col-md-5">
                     <h1 className="title-perfil">Danna Blenk</h1>
@@ -20,7 +20,9 @@ const Biografia = () => {
                         Su talento y dedicación le han permitido alcanzar el éxito y la admiración de muchos, siendo así una gran fuente de inspiración para aquellos que aman el arte.</p>
                 </div>
                 <div>
-                    <button className="btn me-5" type="submit" onClick={() => navigate(-1)}><i className="bi bi-box-arrow-left" style={{ fontSize: "30px", color: "#716e6e" }}></i></button>
+                    <button className="btn me-5" type="submit" onClick={() => navigate(-1)}>
+                        <i className="bi bi-box-arrow-left" style={{ fontSize: "30px", color: "#716e6e" }}></i>
+                    </button>
                 </div>
             </div>
         </div>

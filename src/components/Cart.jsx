@@ -33,8 +33,9 @@ const Cart = () => {
                                 <th scope="col" style={{ fontSize: "18px" }}>Producto</th>
                                 <th scope="col" style={{ fontSize: "18px" }}>Cantidad</th>
                                 <th scope="col" style={{ fontSize: "18px" }}>Precio</th>
-                                <th scope="col" colSpan={5} className="text-end"><Link onClick={clear} className="btn btn-primary" title={"Limpiar carrito"}>Limpiar carrito</Link></th>
-
+                                <th scope="col" colSpan={5} className="text-end">
+                                    <Link onClick={clear} className="btn btn-primary" title={"Limpiar carrito"}>Limpiar carrito</Link>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -44,7 +45,10 @@ const Cart = () => {
                                     <td className="align-middle" style={{ fontSize: "15px" }}>{item.title}</td>
                                     <td className="align-middle px-5" style={{ fontSize: "15px" }}>{item.quantity}</td>
                                     <td className="align-middle" style={{ fontSize: "15px" }}>${item.quantity * item.price}</td>
-                                    <td className="align-middle text-end px-5"><Link onClick={() => { removeItem(item.id) }} title={"Eliminar producto"}><img src={"/images/logo e iconos/trash.svg"} alt={"Eliminar producto"} style={{ width: "22px" }} /></Link></td>
+                                    <td className="align-middle text-end px-5">
+                                        <Link onClick={() => { removeItem(item.id) }} title={"Eliminar producto"}>
+                                            <img src={"/images/logo e iconos/trash.svg"} alt={"Eliminar producto"} style={{ width: "22px" }} />
+                                        </Link></td>
                                 </tr>
                             ))
                             }
@@ -60,7 +64,9 @@ const Cart = () => {
                 </div>
             </div>
             <div>
-                <button className="btn me-5 mb-5" type="submit" onClick={() => navigate(-1)}><i className="bi bi-box-arrow-left" style={{ fontSize: "30px", color: "#716e6e" }}></i></button>
+                <button className="btn me-5 mb-5" type="submit" onClick={() => navigate(-1)}>
+                    <i className="bi bi-box-arrow-left" style={{ fontSize: "30px", color: "#716e6e" }}></i>
+                </button>
             </div>
         </div>
     )
