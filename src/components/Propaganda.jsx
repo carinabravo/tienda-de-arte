@@ -16,6 +16,9 @@ const Propaganda = () => {
                 </div>
             </div>
             <hr></hr>
+            <div>
+                <h1 className="title-principal mt-4 text-center" style={{fontSize:"28px"}}><b>OBRAS DESTACADAS</b></h1>
+            </div>
         </div>
     )
 }
