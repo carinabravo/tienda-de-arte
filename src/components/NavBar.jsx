@@ -25,9 +25,6 @@ const NavBar = () => {
                                     <li className="nav-item">
                                         <NavLink className="nav-link" activeclassname="page" to={"/biografia"}>Biografía</NavLink>
                                     </li>
-                                    <li className="nav-item">
-                                        <NavLink className="nav-link" activeclassname="page" to={"/contacto"}>Contacto</NavLink>
-                                    </li>
                                     <li className="nav-item dropdown me-5">
                                         <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
                                             aria-expanded="false" activeclassname="page" >Obras</a>
