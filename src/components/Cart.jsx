@@ -11,8 +11,10 @@ const Cart = () => {
         return (
             <div className="container">
                 <div className="row py-5 px-5">
-                    <div className="col-md-12 text-center mb-5 px-5">
-                        <div className="alert alert-product alert-danger" role="alert">No se encontraron productos en el carrito!</div>
+                    <div className="col-md-12 text-center mb-5">
+                        <div className="alert alert-product alert-danger" style={{ fontSize: "15px", color: "#cc062e" }}
+                            role="alert"><b>No se encontraron productos en el carrito de compras!</b>
+                        </div>
                         <Link to={"/"} className="btn btn-volver btn-primary mt-2">Go Home</Link>
                     </div>
                 </div>
@@ -47,17 +49,16 @@ const Cart = () => {
                                     <td className="align-middle" style={{ fontSize: "15px" }}>${item.quantity * item.price}</td>
                                     <td className="align-middle text-end px-5">
                                         <Link onClick={() => { removeItem(item.id) }} title={"Eliminar producto"}>
-                                            <img src={"/images/logo e iconos/trash.svg"} alt={"Eliminar producto"} style={{ width: "22px" }} />
+                                            <img src={"/images/logo e iconos/trash.svg"} alt={"Eliminar producto"} />
                                         </Link></td>
                                 </tr>
                             ))
                             }
                             <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td className="align-middle" style={{ fontSize: "20px" }}><b>Total a pagar:</b></td>
-                                <td className="align-middle" style={{ fontSize: "20px" }}><b>${sumaTotal()}</b></td>
-                                <td className="align-middle text-end"><button className="btn btn-primary">Finalizar compra</button></td>
+                                <td colSpan={2}>&nbsp;</td>
+                                <td className="align-middle" style={{ fontSize: "18px" }}><b>Total a pagar:</b></td>
+                                <td className="align-middle" style={{ fontSize: "18px" }}><b>${sumaTotal()}</b></td>
+                                <td className="align-middle text-end"><Link to={"/checkout"} className="btn btn-success">Finalizar compra</Link></td>
                             </tr>
                         </tbody>
                     </table>
