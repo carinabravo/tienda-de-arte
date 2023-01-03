@@ -2,7 +2,6 @@ import './footer.css';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-
 const Footer = () => {
 
   return (
@@ -19,7 +18,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        
         <div className=" col-md-5 mb-3 px-3">
           <form>
             <h5>Newsletter de Danna Blenk</h5>
@@ -32,7 +30,6 @@ const Footer = () => {
           </form>
         </div>
       </div>
-
       <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
         <p className="ms-3">© 2022 By Carina Bravo - All rights reserved.</p>
         <div className="list-unstyled d-flex">

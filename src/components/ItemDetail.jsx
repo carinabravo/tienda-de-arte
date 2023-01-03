@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import ItemCount from './ItemCount';
 import { CartContext } from './context/CartContext';
 
-
 const ItemDetail = ({ item }) => {
     const navigate = useNavigate();
     const { addItem } = useContext(CartContext);
@@ -19,7 +18,6 @@ const ItemDetail = ({ item }) => {
         setItemStock(item.stock);
 
     }, [item]);
-
 
     return (
         <div className="row">

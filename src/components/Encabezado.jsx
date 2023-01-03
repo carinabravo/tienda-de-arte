@@ -1,7 +1,6 @@
 import './encabezado.css';
 import React from 'react';
 
-
 const Encabezado = () => {
 
     return (

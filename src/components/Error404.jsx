@@ -2,7 +2,6 @@ import './error.css';
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const Error404 = () => {
     return (
         <div className="container mb-5">

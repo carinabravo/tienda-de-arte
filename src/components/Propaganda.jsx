@@ -1,7 +1,6 @@
 import './propaganda.css';
 import React from "react";
 
-
 const Propaganda = () => {
     return (
         <div className="container">

@@ -18,7 +18,6 @@ import Checkout from "./components/Checkout";
 
 
 function App() {
-
   return (
     <CartContextProvider>
       <BrowserRouter>
@@ -42,7 +41,6 @@ function App() {
 }
 
 function Inicio() {
-  // solo se carga el carousel  y la propaganda en el inicio.
   return (
     <>
       <Carousel />

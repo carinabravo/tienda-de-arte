@@ -4,6 +4,7 @@ import { CartContext } from './context/CartContext';
 
 const CartWidget = () => {
     const { cartTotal } = useContext(CartContext);
+    
     return (
         <Link to={"/cart"} className="btn position-relative" >
             <img src={"images/logo e iconos/cart4.svg"} alt="Carrito" width="25" />

@@ -9,7 +9,6 @@ const Checkout = () => {
     const [email, setEmail] = useState("");
     const [orderId, setOrderId] = useState("");
 
-
     const generarOrden = () => {
         const fecha = new Date();
 
@@ -29,21 +28,17 @@ const Checkout = () => {
 
         addDoc(ordersCollection, order).then((datos) => {
             setOrderId(datos.id);
-            //Se selecciona la orden a generar
             const generatedOrder = doc(db, "orders", datos.id);
-            //Se actualiza la orden generada aplicando un 21% IVA al valor total
             updateDoc(generatedOrder, { total: order.total * 1.21 });
 
-            //Se modifica orden en batch
             const batch = writeBatch(db);
             const updatedOrder = doc(db, "orders", datos.id);
             batch.set(updatedOrder, { ...order, price_cyber_week: sumaTotal() * 0.9 });
-            batch.commit(); //Se efectiviza la actualización o seteo de los campos o valores
+            batch.commit();
 
             clear();
         });
     }
-
 
     return (
         <div className="container">

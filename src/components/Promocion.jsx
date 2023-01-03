@@ -1,9 +1,7 @@
 import './promocion.css';
 import React from 'react';
 
-
 const Promocion = () => {
-
     return (
         <div className="container-fluid promo">
             <div className="col-md-12 mb-5">
