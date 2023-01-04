@@ -33,7 +33,7 @@ const Checkout = () => {
 
             const batch = writeBatch(db);
             const updatedOrder = doc(db, "orders", datos.id);
-            batch.set(updatedOrder, { ...order, price_cyber_week: sumaTotal() * 0.9 });
+            batch.set(updatedOrder, { ...order, price_cyber_week: sumaTotal() * 0.85 });
             batch.commit();
 
             clear();
