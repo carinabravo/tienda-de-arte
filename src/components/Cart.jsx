@@ -15,7 +15,7 @@ const Cart = () => {
                         <div className="alert alert-product alert-danger" style={{ fontSize: "15px", color: "#cc062e" }}
                             role="alert"><b>No se encontraron productos en el carrito de compras!</b>
                         </div>
-                        <Link to={"/"} className="btn btn-volver btn-primary mt-2">Go Home</Link>
+                        <Link to={"/"} className="btn btn-volver btn-primary mt-2">Volver</Link>
                     </div>
                 </div>
             </div>
