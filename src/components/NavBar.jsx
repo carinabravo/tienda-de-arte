@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-10 mt-4 mb-4">
+                <div className="col-md-11 mt-4 mb-4">
                     <nav className="navbar navbar-expand-lg">
                         <div className="container">
                             <Link className="navbar-brand" to={"/"}>
@@ -42,16 +42,12 @@ const NavBar = () => {
                                         </ul>
                                     </li>
                                 </ul>
-                                <form className="d-flex" role="search">
-                                    <input className="form-control me-2" type="search" placeholder="Obra..." aria-label="Search" />
-                                    <button className="btn btn-outline-dark" type="submit">Buscar</button>
-                                </form>
+                            </div>
+                            <div className="col-md-1 d-flex align-items-center justify-content-end">
+                                <CartWidget />
                             </div>
                         </div>
                     </nav>
-                </div>
-                <div className="col-md-2 d-flex align-items-center justify-content-end">
-                    <CartWidget />
                 </div>
             </div>
         </div >

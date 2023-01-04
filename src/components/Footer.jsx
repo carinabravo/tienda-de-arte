@@ -2,6 +2,7 @@ import './footer.css';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+
 const Footer = () => {
 
   return (
@@ -9,8 +10,8 @@ const Footer = () => {
       <div className="row">
         <div className="col-md-7 px-3 mb-3">
           <h5>Sección</h5>
-          <ul className="nav flex-column py-1">
-            <li className="nav-item"><NavLink to={"/"} className="nav-NavLink px-0 text-muted text-decoration-none">
+          <ul className="nav flex-column">
+            <li className="nav-item mb-1"><NavLink to={"/"} className="nav-NavLink px-0 text-muted text-decoration-none">
               <img src={"images/logo e iconos/house.svg"} className="me-2" alt="house" width="18" />Inicio</NavLink >
             </li>
             <li className="nav-item"><NavLink to={"/biografia"} className="nav-NavLink px-0 text-muted text-decoration-none">
