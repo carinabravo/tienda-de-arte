@@ -1,0 +1,11 @@
+.img-informacion {
+  width: 180px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.text-informacion1,
+.text-informacion2,
+.text-informacion3 {
+  text-align: justify;
+}
