@@ -8,7 +8,7 @@ const Promocion = () => {
                 <div className="container">
                     <div className="text-cyber col-md-12 d-flex justify-content-center align-items-center pt-3">
                     <img src={"images/logo e iconos/rocket-takeoff.svg"} alt="nave" width="30" />
-                        <h4 className="m-2">Lanzamos el <b>Cyber Week</b> y con tu compra obtendrás un <b>15% off!</b></h4>
+                        <p className="m-2" style={{ fontSize: "22px" }}>Lanzamos el <b>Cyber Week</b> y con tu compra obtendrás un <b>15% off!</b></p>
                     </div>
                     <div className="text-promo row px-0 py-4">
                         <div className="col-md-4 d-flex justify-content-start align-items-center">
