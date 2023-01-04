@@ -6,7 +6,6 @@ import Error404 from "./components/Error404";
 import Encabezado from "./components/Encabezado";
 import NavBar from "./components/NavBar";
 import Carousel from "./components/Carousel";
-import Propaganda from "./components/Propaganda";
 import Promocion from "./components/Promocion";
 import Footer from "./components/Footer";
 import ItemListContainer from "./components/ItemListContainer";
@@ -15,6 +14,7 @@ import Biografia from "./components/Biografia";
 import CartContextProvider from "./components/context/CartContext";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
+import Informacion from "./components/Informacion";
 
 
 function App() {
@@ -44,7 +44,7 @@ function Inicio() {
   return (
     <>
       <Carousel />
-      <Propaganda />
+      <Informacion />
       <ItemListContainer />
     </>
   )
