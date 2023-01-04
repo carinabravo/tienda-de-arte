@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
-import { addDoc, doc, collection, getFirestore, writeBatch, updateDoc } from "firebase/firestore";
+import { addDoc, doc, collection, getFirestore, writeBatch, getDoc } from "firebase/firestore";
 import { CartContext } from "./context/CartContext";
+import { Navigate } from "react-router-dom";
 
 const Checkout = () => {
     const { cart, clear, sumaTotal } = useContext(CartContext);
@@ -15,7 +16,7 @@ const Checkout = () => {
         const order = {
             buyer: { name: nombre, phone: telefono, email: email },
             items: cart.map(item => ({
-                id: item.id, title: item.title, quantity: item.quantity, price: item.price,
+                id: item.id, title: item.title, quantity: item.quantity, stock: item.stock, price: item.price,
                 price_total: item.quantity * item.price
             })),
             total: sumaTotal(),
@@ -26,16 +27,18 @@ const Checkout = () => {
         const db = getFirestore();
         const ordersCollection = collection(db, "orders");
 
-        addDoc(ordersCollection, order).then((datos) => {
-            setOrderId(datos.id);
-            const generatedOrder = doc(db, "orders", datos.id);
-            updateDoc(generatedOrder, { total: order.total * 1.21 });
-
+        addDoc(ordersCollection, order).then(async(orderRef) => {
             const batch = writeBatch(db);
-            const updatedOrder = doc(db, "orders", datos.id);
-            batch.set(updatedOrder, { ...order, price_cyber_week: sumaTotal() * 0.85 });
-            batch.commit();
+            batch.update(orderRef, { total: order.total * 1.21, price_cyber_week: sumaTotal() * 0.85 });
 
+            for (let item of order.items) {
+                let productRef = doc(db, "items", item.id);
+                let product = await getDoc(productRef)
+                batch.update(productRef, { stock: product.data().stock - item.quantity });
+            }
+
+            await batch.commit();
+            setOrderId(orderRef.id);
             clear();
         });
     }
@@ -46,21 +49,21 @@ const Checkout = () => {
                 <div className="col-md-5">
                     <form>
                         <div className="mb-3 mt-1">
-                            <label for="nombre" className="form-label" style={{ fontSize: "15px" }}><b>Nombre y Apellido:</b></label>
+                            <label htmlFor="nombre" className="form-label" style={{ fontSize: "15px" }}><b>Nombre y Apellido:</b></label>
                             <input type="text" className="form-control" style={{ fontSize: "15px" }} id="nombre"
                                 placeholder="Ingrese su nombre completo" onInput={(e) => { setNombre(e.target.value) }} />
                         </div>
                         <div className="mb-3">
-                            <label for="telefono" className="form-label" style={{ fontSize: "15px" }}><b>Teléfono:</b></label>
+                            <label htmlFor="telefono" className="form-label" style={{ fontSize: "15px" }}><b>Teléfono:</b></label>
                             <input type="number" className="form-control" style={{ fontSize: "15px" }} id="telefono"
                                 placeholder="Ingrese su número de teléfono" onInput={(e) => { setTelefono(e.target.value) }} />
                         </div>
                         <div className="mb-3">
-                            <label for="email" className="form-label" style={{ fontSize: "15px" }}><b>Email:</b></label>
+                            <label htmlFor="email" className="form-label" style={{ fontSize: "15px" }}><b>Email:</b></label>
                             <input type="text" className="form-control" style={{ fontSize: "15px" }} id="email"
                                 placeholder="Ingrese su email" onInput={(e) => { setEmail(e.target.value) }} />
                         </div>
-                        <button type="button" class="btn btn-success mt-3 mb-4" onClick={generarOrden}>Generar orden</button>
+                        <button type="button" className="btn btn-success mt-3 mb-4" onClick={generarOrden}>Generar orden</button>
                     </form>
                 </div>
                 <div className="col-md-6 offset-md-1 mb-4 mt-1">
@@ -84,15 +87,15 @@ const Checkout = () => {
                     </table>
                 </div>
             </div>
-            <div className="row px-5 py-5">
-                <div className="col-md-12 text-center mb-5">
-                    {orderId !== "" ? <div className="alert alert-success" style={{ fontSize: "15px" }}
-                        role="alert">La orden generada es: <b>{orderId}</b></div> : ""}
+            <div className="row">
+                <div className="col text-center">
+                    {orderId !== "" ? <Navigate to={"/ordenGenerada/" + orderId} /> : ""}
                 </div>
             </div>
         </div>
 
     )
 }
+
 
 export default Checkout;
