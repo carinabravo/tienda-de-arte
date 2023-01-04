@@ -18,8 +18,9 @@ const ItemListContainer = () => {
             : collection(db, "items");
 
         getDocs(itemsCollection).then((datos) => {
-            setItems(datos.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
-            setLoading(false)
+            setItems(datos.docs.map((doc) => ({ id: doc.id, ...doc.data() })
+            ));
+            setLoading(false);
         });
 
     }, [category]);

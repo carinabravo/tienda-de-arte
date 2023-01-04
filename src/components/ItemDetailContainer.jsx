@@ -16,8 +16,8 @@ const ItemDetailContainer = () => {
         getDoc(item).then((datos) => {
             if (datos.exists()) {
                 setItem({ id: datos.id, ...datos.data() });
+                setLoading(false);
             } else { }
-            setLoading(false)
         });
 
     }, [id]);
