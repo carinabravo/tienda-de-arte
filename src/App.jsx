@@ -15,6 +15,7 @@ import CartContextProvider from "./components/context/CartContext";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import Informacion from "./components/Informacion";
+import OrdenGenerada from "./components/OrdenGenerada";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path={"/item/:id"} element={<ItemDetailContainer />} />
           <Route path={"/cart"} element={<Cart />} />
           <Route path={"/checkout"} element={<Checkout />} />
+          <Route path={"/ordenGenerada/:id"} element={<OrdenGenerada />} />
           <Route path={"*"} element={<Error404 />} />
         </Routes>
         <Promocion />
