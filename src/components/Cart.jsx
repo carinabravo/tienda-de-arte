@@ -12,10 +12,10 @@ const Cart = () => {
             <div className="container">
                 <div className="row py-5 px-5">
                     <div className="col-md-12 text-center mb-5">
-                        <div className="alert alert-product alert-danger" style={{ fontSize: "15px", color: "#cc062e" }}
-                            role="alert"><b>No se encontraron productos en el carrito de compras!</b>
+                        <div className="alert alert-product alert-danger" role="alert">
+                            <h1 className="m-2" style={{ fontSize: "20px", color: "#cc062e" }}>Aún no tiene productos en su carrito de compras!</h1>
                         </div>
-                        <Link to={"/"} className="btn btn-volver btn-primary mt-2">Volver</Link>
+                        <Link to={"/"} className="btn btn-volver btn-primary mt-2">Volver a la página principal</Link>
                     </div>
                 </div>
             </div>
