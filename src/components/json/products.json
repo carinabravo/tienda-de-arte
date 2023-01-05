@@ -79,7 +79,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura acrílica sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 40000,
     "image": "/images/obras/Fuego.jpg",
-    "stock": 2,
+    "stock": 5,
     "initial": 1
   },
 
@@ -91,7 +91,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura acrílicasobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 35000,
     "image": "/images/obras/Ideas.jpg",
-    "stock": 1,
+    "stock": 4,
     "initial": 1
   },
 
@@ -139,7 +139,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con técnica mixta sobre lienzo, la cual se conforma por la utilización de más de dos tipos de pinturas, como lo son el acrílico y el óleo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 55000,
     "image": "/images/obras/Océano.jpg",
-    "stock": 2,
+    "stock": 5,
     "initial": 1
   },
 
