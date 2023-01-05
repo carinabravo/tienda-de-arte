@@ -29,16 +29,20 @@ const NavBar = () => {
                                             aria-expanded="false" activeclassname="page" >Obras</a>
                                         <ul className="dropdown-menu">
                                             <NavLink className="dropdown-item" to={"/category/acrilico"}>
-                                                <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette" width="18" />Acrílicos</NavLink>
+                                                <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette"
+                                                    width="18" />Acrílicos</NavLink>
                                             <hr className="dropdown-divider" />
                                             <NavLink className="dropdown-item" to={"/category/acuarela"}>
-                                                <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette" width="18" />Acuarelas</NavLink>
+                                                <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette"
+                                                    width="18" />Acuarelas</NavLink>
                                             <hr className="dropdown-divider" />
                                             <NavLink className="dropdown-item" to={"/category/oleo"}>
-                                                <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette" width="18" />Óleos</NavLink>
+                                                <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette"
+                                                    width="18" />Óleos</NavLink>
                                             <hr className="dropdown-divider" />
                                             <NavLink className="dropdown-item" to={"/category/tecnica-mixta"}>
-                                                <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette" width="18" />Técnica mixta</NavLink>
+                                                <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette"
+                                                    width="18" />Técnica mixta</NavLink>
                                         </ul>
                                     </li>
                                 </ul>
