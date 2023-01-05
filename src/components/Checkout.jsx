@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { addDoc, doc, collection, getFirestore, writeBatch, getDoc } from "firebase/firestore";
 import { CartContext } from "./context/CartContext";
 import { Navigate } from "react-router-dom";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 
 const Checkout = () => {
     const { cart, clear, sumaTotal } = useContext(CartContext);
@@ -14,11 +15,17 @@ const Checkout = () => {
         const fecha = new Date();
 
         const order = {
-            buyer: { name: nombre, phone: telefono, email: email },
+            buyer: {
+                name: nombre,
+                phone: telefono,
+                email: email
+            },
+
             items: cart.map(item => ({
                 id: item.id, title: item.title, quantity: item.quantity, stock: item.stock, price: item.price,
                 price_total: item.quantity * item.price
             })),
+
             total: sumaTotal(),
             order_date: `${fecha.getFullYear()}-${fecha.getMonth() + 1}-${fecha.getDate()}-${fecha.getHours()}
             :${fecha.getMinutes()}:${fecha.getSeconds()}`
@@ -27,7 +34,7 @@ const Checkout = () => {
         const db = getFirestore();
         const ordersCollection = collection(db, "orders");
 
-        addDoc(ordersCollection, order).then(async(orderRef) => {
+        addDoc(ordersCollection, order).then(async (orderRef) => {
             const batch = writeBatch(db);
             batch.update(orderRef, { total: order.total * 1.21, price_cyber_week: sumaTotal() * 0.85 });
 
@@ -47,25 +54,99 @@ const Checkout = () => {
         <div className="container">
             <div className="row py-5">
                 <div className="col-md-5">
-                    <form>
-                        <div className="mb-3 mt-1">
-                            <label htmlFor="nombre" className="form-label" style={{ fontSize: "15px" }}><b>Nombre y Apellido:</b></label>
-                            <input type="text" className="form-control" style={{ fontSize: "15px" }} id="nombre"
-                                placeholder="Ingrese su nombre completo" onInput={(e) => { setNombre(e.target.value) }} />
-                        </div>
-                        <div className="mb-3">
-                            <label htmlFor="telefono" className="form-label" style={{ fontSize: "15px" }}><b>Teléfono:</b></label>
-                            <input type="number" className="form-control" style={{ fontSize: "15px" }} id="telefono"
-                                placeholder="Ingrese su número de teléfono" onInput={(e) => { setTelefono(e.target.value) }} />
-                        </div>
-                        <div className="mb-3">
-                            <label htmlFor="email" className="form-label" style={{ fontSize: "15px" }}><b>Email:</b></label>
-                            <input type="text" className="form-control" style={{ fontSize: "15px" }} id="email"
-                                placeholder="Ingrese su email" onInput={(e) => { setEmail(e.target.value) }} />
-                        </div>
-                        <button type="button" className="btn btn-success mt-3 mb-4" onClick={generarOrden}>Generar orden</button>
-                    </form>
+                    <Formik
+                        initialValues={{
+                            nombre: '',
+                            telefono: '',
+                            email: ''
+                        }}
+
+                        validate={(valores) => {
+                            let errores = {};
+
+                            if (!valores.nombre) {
+                                errores.nombre = 'Por favor ingrese un nombre.'
+                            } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.nombre)) {
+                                errores.nombre = 'El nombre solo puede contener letras y espacios.'
+                            }
+
+                            if (!valores.telefono) {
+                                errores.telefono = 'Por favor ingrese un número telefónico.'
+                            } else if (!/^\d{7,14}$/.test(valores.telefono)) {
+                                errores.telefono = 'El número telefónico solo debe contener números sin espacio.'
+                            }
+
+                            if (!valores.email) {
+                                errores.email = 'Por favor ingrese un correo electrónico.'
+                            } else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.email)) {
+                                errores.email = 'El correo solo puede contener letras, números, punto, giones y gión bajo.'
+                            }
+
+                            return errores;
+                        }}
+
+                        onSubmit={(_values) => {
+                            generarOrden()
+                        }}
+                    >
+                        {({ errors }) => (
+                            <Form className="formulario">
+                                <div className="mb-3 mt-1">
+                                    <label htmlFor="nombre" className="form-label" style={{ fontSize: "15px" }}><b>Nombre y apellido:</b></label>
+                                    <Field
+                                        type="text" className="form-control" style={{ fontSize: "15px" }}
+                                        id="nombre" name="nombre" placeholder="juan perez"
+                                        onInput={(e) => {
+                                            setNombre(e.target.value)
+                                        }}
+                                    />
+                                    <ErrorMessage name="nombre" component={() => (
+                                        <div className="error mt-2" style={{ fontSize: "15px", color: "#cc062e" }}>
+                                            {errors.nombre}
+                                        </div>
+                                    )}>
+                                    </ErrorMessage>
+                                </div>
+
+                                <div className="mb-3">
+                                    <label htmlFor="telefono" className="form-label" style={{ fontSize: "15px" }}><b>Teléfono:</b></label>
+                                    <Field
+                                        type="number" className="form-control" style={{ fontSize: "15px" }}
+                                        id="telefono" name="telefono" placeholder="2213451122"
+                                        onInput={(e) => {
+                                            setTelefono(e.target.value)
+                                        }}
+                                    />
+                                    <ErrorMessage name="telefono" component={() => (
+                                        <div className="error mt-2" style={{ fontSize: "15px", color: "#cc062e" }}>
+                                            {errors.telefono}
+                                        </div>
+                                    )}>
+                                    </ErrorMessage>
+                                </div>
+
+                                <div className="mb-3">
+                                    <label htmlFor="email" className="form-label" style={{ fontSize: "15px" }}><b>Email:</b></label>
+                                    <Field
+                                        type="text" className="form-control" style={{ fontSize: "15px" }}
+                                        id="email" name="email" placeholder="ejemplo@gmail.com"
+                                        onInput={(e) => {
+                                            setEmail(e.target.value)
+                                        }}
+                                    />
+                                    <ErrorMessage name="email" component={() => (
+                                        <div className="error mt-2" style={{ fontSize: "15px", color: "#cc062e" }}>
+                                            {errors.email}
+                                        </div>
+                                    )}>
+                                    </ErrorMessage>
+                                </div>
+                                <button type="submit" className="btn btn-success mt-3 mb-4">Generar orden</button>
+                            </Form>
+                        )}
+                    </Formik>
                 </div>
+
                 <div className="col-md-6 offset-md-1 mb-4 mt-1">
                     <table className="table">
                         <tbody>
@@ -89,13 +170,14 @@ const Checkout = () => {
             </div>
             <div className="row">
                 <div className="col text-center">
-                    {orderId !== "" ? <Navigate to={"/ordenGenerada/" + orderId} /> : ""}
+                    {orderId !== "" ?
+                        <Navigate to={"/ordenGenerada/" + orderId} />
+                        : ""}
                 </div>
             </div>
-        </div>
+        </div >
 
     )
 }
-
 
 export default Checkout;
