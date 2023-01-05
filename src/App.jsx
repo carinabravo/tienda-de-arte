@@ -17,7 +17,6 @@ import Checkout from "./components/Checkout";
 import Informacion from "./components/Informacion";
 import OrdenGenerada from "./components/OrdenGenerada";
 
-
 function App() {
   return (
     <CartContextProvider>
