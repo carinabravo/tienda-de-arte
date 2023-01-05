@@ -14,7 +14,7 @@ const Informacion = () => {
                     <p className="text-informacion3">El tiempo estimado de <b>entrega</b> de cada producto es de 10 a 15 dìas hábiles y se
                         envían con su certificado de autenticidad firmado por la artista.</p>
                 </div>
-                <div className="col-md-2 offset-md-1 mb-2">
+                <div className="col-md-2 offset-md-1 mb-1">
                     <img src="/images/Danna Blenk/propaganda.jpg" alt="danna blenk" className="img-informacion" />
                 </div>
             </div>
