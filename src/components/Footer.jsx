@@ -25,7 +25,7 @@ const Footer = () => {
             <p>¡Suscribite y recibí todas las novedades!</p>
             <div className="d-flex flex-column flex-sm-row w-100 gap-2">
               <label htmlFor="newsletter1" className="visually-hidden">Dirección de Email</label>
-              <input id="newsletter1" type="text" className="form-control" placeholder="Ingresar dirección de Email..." />
+              <input id="newsletter1" type="text" className="form-control" placeholder="ejemplo@gmail.com" />
               <button className="btn btn-suscription btn-primary" type="button">Suscribirme</button>
             </div>
           </form>
