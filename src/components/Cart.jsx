@@ -10,12 +10,14 @@ const Cart = () => {
     if (cartTotal() === 0) {
         return (
             <div className="container">
-                <div className="row py-5 px-5">
-                    <div className="col-md-12 text-center mb-5">
+                <div className="row py-5 px-5" >
+                    <div className="col-md-6 offset-md-3 text-center mb-5">
                         <div className="alert alert-product alert-danger" role="alert">
-                            <h1 className="m-2" style={{ fontSize: "20px", color: "#cc062e" }}>No se encontraron productos en tu carrito!</h1>
+                            <h1 className="m-2" style={{ fontSize: "22px", color: "#cc062e" }}><b>Tu carrito de compras se encuentra vacío!</b></h1>
                         </div>
-                        <Link to={"/"} className="btn btn-volver btn-primary mt-2">Volver a la página principal</Link>
+                        <div>
+                            <Link to={"/"} className="btn btn-volver btn-primary mt-2">Volver a la página principal</Link>
+                        </div>
                     </div>
                 </div>
             </div>
