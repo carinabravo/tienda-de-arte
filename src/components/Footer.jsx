@@ -1,9 +1,34 @@
 import './footer.css';
 import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-
 const Footer = () => {
+  const [state, handleSubmit] = useForm("xrgdqqpr");
+  const [mostrarMensaje, setMostrarMensaje] = useState(false);
+
+  useEffect(() => {
+    if (state.succeeded == true) {
+      setMostrarMensaje(true)
+      setTimeout(() => {
+        setMostrarMensaje(false)
+      }, 3000)
+    }
+    
+  }, [state.succeeded])
+
+  if (mostrarMensaje) {
+    return (
+      <div className='container'>
+        <div className='col-md-4 offset-md-4 px-5 py-5'>
+          <div className='row text-center'>
+            <div className="alert alert-success mensaje-exito" role="alert">Suscripción exitosa!</div>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <footer className="container">
@@ -19,18 +44,31 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+
         <div className=" col-md-5 mb-3 px-3">
-          <form>
+          <form onSubmit={handleSubmit}>
             <h5>Newsletter de Danna Blenk</h5>
             <p>¡Suscribite y recibí todas las novedades!</p>
             <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label htmlFor="newsletter1" className="visually-hidden">Dirección de Email</label>
-              <input id="newsletter1" type="text" className="form-control" placeholder="ejemplo@gmail.com" />
-              <button className="btn btn-suscription btn-primary" type="button">Suscribirme</button>
+              <label htmlFor="email" className="visually-hidden">Dirección de Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                className="form-control"
+                placeholder="ejemplo@gmail.com"
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+              <button className="btn btn-suscription btn-primary" type="submit" disabled={state.submitting}>Suscribirme</button>
             </div>
           </form>
         </div>
       </div>
+
       <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
         <p className="ms-3">© 2022 By Carina Bravo - All rights reserved.</p>
         <div className="list-unstyled d-flex">
@@ -45,6 +83,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
+
     </footer>
   )
 }

@@ -5,3 +5,9 @@
 .nav-NavLink {
   font-size: 16px;
 }
+
+.mensaje-exito {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
