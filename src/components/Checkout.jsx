@@ -1,10 +1,11 @@
 import React, { useContext, useState } from "react";
 import { addDoc, doc, collection, getFirestore, writeBatch, getDoc } from "firebase/firestore";
 import { CartContext } from "./context/CartContext";
-import { Navigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
 const Checkout = () => {
+    const navigate = useNavigate();
     const { cart, clear, sumaTotal } = useContext(CartContext);
     const [nombre, setNombre] = useState("");
     const [telefono, setTelefono] = useState("");
@@ -141,11 +142,12 @@ const Checkout = () => {
                                     )}>
                                     </ErrorMessage>
                                 </div>
-                                <button type="submit" className="btn btn-success mt-3 mb-4">Generar orden</button>
+                                <button type="submit" className="btn btn-success mt-2 mb-5">Generar orden</button>
                             </Form>
                         )}
                     </Formik>
                 </div>
+
 
                 <div className="col-md-6 offset-md-1 mb-4 mt-1">
                     <table className="table">
@@ -173,6 +175,11 @@ const Checkout = () => {
                     {orderId !== "" ?
                         <Navigate to={"/ordenGenerada/" + orderId} />
                         : ""}
+                </div>
+                <div>
+                    <button className="btn me-5 mb-5" type="submit" onClick={() => navigate(-1)}>
+                        <i className="bi bi-box-arrow-left" style={{ fontSize: "30px", color: "#716e6e" }}></i>
+                    </button>
                 </div>
             </div>
         </div >
