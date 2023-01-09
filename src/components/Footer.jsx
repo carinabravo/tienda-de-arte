@@ -9,7 +9,7 @@ const Footer = () => {
   const [mostrarMensaje, setMostrarMensaje] = useState(false);
 
   useEffect(() => {
-    if (state.succeeded == true) {
+    if (state.succeeded === true) {
       setMostrarMensaje(true)
       setTimeout(() => {
         setMostrarMensaje(false)
@@ -35,7 +35,7 @@ const Footer = () => {
       <div className="row">
         <div className="col-md-7 px-3 mb-3">
           <h5>Sección</h5>
-          <ul className="nav flex-column">
+          <ul className="nav flex-column mb-3">
             <li className="nav-item mb-1"><NavLink to={"/"} className="nav-NavLink px-0 text-muted text-decoration-none">
               <img src={"images/logo e iconos/house.svg"} className="me-2" alt="house" width="18" />Inicio</NavLink >
             </li>

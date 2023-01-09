@@ -4,8 +4,8 @@ import React from 'react';
 const Promocion = () => {
     return (
         <div className="container-fluid promo">
-            <div className="col-md-12 mb-5">
-                <div className="container">
+            <div className="col-md-12 px-5 mb-5">
+                <div className="row my-5">
                     <div className="text-cyber col-md-12 d-flex justify-content-center align-items-center pt-3">
                     <img src={"images/logo e iconos/rocket-takeoff.svg"} alt="nave" width="30" />
                         <p className="m-2" style={{ fontSize: "22px" }}>Lanzamos el <b>Cyber Week</b> y con tu compra obtendrás un <b>15% off!</b></p>

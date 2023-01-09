@@ -4,8 +4,8 @@ import React from "react";
 const Informacion = () => {
     return (
         <div className="container">
-            <div className="row py-4">
-                <div className="col-md-7 offset-md-1 mt-4">
+            <div className="row">
+                <div className="col-md-7 offset-md-1 mt-3 mb-0">
                     <p className="text-informacion1">Danna Blenk <b>trabaja</b> en cada pieza poniendo atención a la calidad y el detalle,
                         respetando los procesos de secado de los materiales en su taller.</p>
                     <p className="text-informacion2">Realiza <b>envíos</b> a todo el país, cuidando al máximo los detalles de embalaje y
@@ -14,8 +14,8 @@ const Informacion = () => {
                     <p className="text-informacion3">El tiempo estimado de <b>entrega</b> de cada producto es de 10 a 15 dìas hábiles y se
                         envían con su certificado de autenticidad firmado por la artista.</p>
                 </div>
-                <div className="col-md-2 offset-md-1 mb-1">
-                    <img src="/images/Danna Blenk/propaganda.jpg" alt="danna blenk" className="img-informacion" />
+                <div className="col-md-3 offset-md-1 my-3">
+                    <img src="/images/Danna Blenk/propaganda.jpg" alt="danna blenk" className="img-informacion img-fluid" />
                 </div>
             </div>
             <hr></hr>

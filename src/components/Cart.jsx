@@ -27,8 +27,8 @@ const Cart = () => {
 
     return (
         <div className="container">
-            <div className="row">
-                <div className="col-md-12 py-4">
+            <div className="row py-5">
+                <div className="col-md-12">
                     <table className="table">
                         <thead>
                             <tr>

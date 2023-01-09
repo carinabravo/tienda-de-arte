@@ -22,7 +22,7 @@ const ItemDetail = ({ item }) => {
     return (
         <div className="row">
             <div className="col-md-5 offset-md-1">
-                <img src={item.image} alt={item.title} className="img-unica img-fluid" width={400} />
+                <img src={item.image} alt={item.title} className="img-unica img-fluid mb-4" width={400} />
             </div>
             <div className="col-md-5">
                 <h1 className="item-title">{item.title}</h1>
