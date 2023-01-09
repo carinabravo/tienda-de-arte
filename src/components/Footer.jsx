@@ -21,7 +21,7 @@ const Footer = () => {
   if (mostrarMensaje) {
     return (
       <div className='container'>
-        <div className='col-md-4 offset-md-4 px-5 py-5'>
+        <div className='col-lg-6 col-md-6 col-sm-12 offset-md-3 px-5 py-5'>
           <div className='row text-center'>
             <div className="alert alert-success mensaje-exito" role="alert">Suscripción exitosa!</div>
           </div>
@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <footer className="container">
       <div className="row">
-        <div className="col-md-7 px-3 mb-3">
+        <div className="col-lg-7 col-md-5 col-sm-12 px-3 mb-3">
           <h5>Sección</h5>
           <ul className="nav flex-column mb-3">
             <li className="nav-item mb-1"><NavLink to={"/"} className="nav-NavLink px-0 text-muted text-decoration-none">
@@ -45,7 +45,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className=" col-md-5 mb-3 px-3">
+        <div className="col-lg-5 col-md-7 col-sm-12 mb-3 px-3">
           <form onSubmit={handleSubmit}>
             <h5>Newsletter de Danna Blenk</h5>
             <p>¡Suscribite y recibí todas las novedades!</p>

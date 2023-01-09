@@ -8,10 +8,10 @@ const Biografia = () => {
     return (
         <div className="container my-5">
             <div className="row">
-                <div className="col-md-5 offset-md-1">
-                    <img src={"/images/Danna Blenk/perfil.jpg"} alt="artista" className="img-perfil img-fluid" />
+                <div className="col-lg-5 col-md-5 col-sm-12 offset-md-1">
+                    <img src={"/images/Danna Blenk/perfil.jpg"} alt="artista" className="img-perfil img-fluid mb-4" />
                 </div>
-                <div className="col-md-5">
+                <div className="col-lg-5 col-md-5 col-sm-12">
                     <h1 className="title-perfil">Danna Blenk</h1>
                     <p className="text-perfil">Nació en un pequeño pueblo de Londres, donde desde muy temprana edad mostró su pasión
                         por el arte. A los 18 años decidió mudarse a Buenos Aires para estudiar en la prestigiosa Escuela de Bellas Arte,

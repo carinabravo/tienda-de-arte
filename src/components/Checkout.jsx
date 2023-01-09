@@ -54,7 +54,7 @@ const Checkout = () => {
     return (
         <div className="container">
             <div className="row py-5">
-                <div className="col-md-5">
+                <div className="col-lg-5 col-md-11 col-sm-11">
                     <Formik
                         initialValues={{
                             nombre: '',
@@ -149,7 +149,7 @@ const Checkout = () => {
                 </div>
 
 
-                <div className="col-md-6 offset-md-1 mb-4 mt-1">
+                <div className="col-lg-6 col-md-11 col-sm-11 offset-md-1 mb-4 mt-1">
                     <table className="table">
                         <tbody>
                             {cart.map(item => (

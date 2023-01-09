@@ -11,7 +11,7 @@ const Cart = () => {
         return (
             <div className="container">
                 <div className="row py-5 px-5" >
-                    <div className="col-md-6 offset-md-3 text-center mb-5">
+                    <div className="col-lg-6 col-md-8 col-sm-12 offset-md-3 text-center mb-5">
                         <div className="alert alert-product alert-danger" role="alert">
                             <h1 className="m-2" style={{ fontSize: "22px", color: "#cc062e" }}><b>Tu carrito de compras se encuentra vacío!</b></h1>
                         </div>
@@ -28,7 +28,7 @@ const Cart = () => {
     return (
         <div className="container">
             <div className="row py-5">
-                <div className="col-md-12">
+                <div className="col-lg-12 col-md-12 col-sm-12">
                     <table className="table">
                         <thead>
                             <tr>

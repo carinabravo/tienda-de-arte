@@ -6,7 +6,7 @@ const Carousel = () => {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className=" col-md-12 mb-3 p-0">
+                <div className="col-lg-12 col-md-12 col-sm-12 mb-3 p-0">
                     <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
