@@ -1,0 +1,31 @@
+.agradecimiento {
+  font-size: 25px;
+}
+
+.numero-orden {
+  font-size: 16px;
+}
+
+.alert-orden {
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .agradecimiento {
+    font-size: 22px;
+  }
+
+  .numero-orden {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .agradecimiento {
+    font-size: 18px;
+  }
+
+  .numero-orden {
+    font-size: 14px;
+  }
+}

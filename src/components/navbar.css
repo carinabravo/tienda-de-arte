@@ -1,0 +1,50 @@
+.img-logo {
+  width: 350px;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+.nav-item-2 {
+  width: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .img-logo {
+    width: 280px;
+  }
+
+  .navbar-toggler-icon {
+    width: 15px;
+    height: 15px;
+    background-size: 100%;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .nav-item-2 {
+    width: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img-logo {
+    width: 220px;
+  }
+
+  .navbar-toggler-icon {
+    width: 13px;
+    height: 13px;
+    background-size: 80%;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .nav-item-2 {
+    width: 15px;
+  }
+}

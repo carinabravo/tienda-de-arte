@@ -1,0 +1,109 @@
+.form-label {
+  font-size: 15px;
+}
+
+.form-control {
+  font-size: 15px;
+}
+
+.error {
+  font-size: 15px;
+  color: #cc062e;
+}
+
+.generar-orden {
+  font-size: 16px;
+}
+
+.img-foto-2 {
+  width: 80px;
+}
+
+.titulo-tabla-2,
+.cantidad-tabla-2,
+.cantidad-tabla-3 {
+  font-size: 15px;
+}
+
+.total-pago-2,
+.suma-total-2 {
+  font-size: 18px;
+}
+
+.btn-navigate {
+  font-size: 30px;
+  color: #716e6e;
+}
+
+@media screen and (max-width: 768px) {
+  .form-label {
+    font-size: 14px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+
+  .error {
+    font-size: 14px;
+  }
+
+  .generar-orden {
+    font-size: 15px;
+  }
+
+  .img-foto-2 {
+    width: 60px;
+  }
+
+  .titulo-tabla-2,
+  .cantidad-tabla-2,
+  .cantidad-tabla-3 {
+    font-size: 14px;
+  }
+
+  .total-pago-2,
+  .suma-total-2 {
+    font-size: 17px;
+  }
+
+  .btn-navigate {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-label {
+    font-size: 13px;
+  }
+
+  .form-control {
+    font-size: 13px;
+  }
+
+  .error {
+    font-size: 13px;
+  }
+
+  .generar-orden {
+    font-size: 14px;
+  }
+  .img-foto-2 {
+    width: 45px;
+  }
+
+  .titulo-tabla-2,
+  .cantidad-tabla-2,
+  .cantidad-tabla-3 {
+    font-size: 13px;
+  }
+
+  .total-pago-2,
+  .suma-total-2 {
+    font-size: 15px;
+  }
+
+  .btn-navigate {
+    font-size: 24px;
+  }
+}

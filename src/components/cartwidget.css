@@ -1,0 +1,15 @@
+.carrito-nav {
+  width: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .carrito-nav {
+    width: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carrito-nav {
+    width: 20px;
+  }
+}
