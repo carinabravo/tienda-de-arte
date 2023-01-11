@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="col-lg-5 col-md-7 col-sm-12 mb-3 px-3">
           <form onSubmit={handleSubmit}>
             <h5 className="titulo-suscripcion">Newsletter de Danna Blenk</h5>
-            <p className="texto-suscripcion" >¡Suscribite y recibí todas las novedades!</p>
+            <p className="texto-suscripcion">¡Suscribite y recibí todas las novedades!</p>
             <div className="d-flex flex-column flex-sm-row w-100 gap-2 ">
               <label htmlFor="email" className="visually-hidden ">Dirección de Email</label>
               <input
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="d-flex flex-column flex-sm-row justify-content-between py-md-4 my-4 border-top">
+      <div className="d-flex flex-column flex-sm-row justify-content-between py-sm-4 pt-2 my-4 border-top derechos-1">
         <p className="ms-1 derechos-texto">© 2022 By Carina Bravo - All rights reserved.</p>
         <div className="list-unstyled d-flex redes">
           <a href="https://www.facebook.com/" className="me-2" >

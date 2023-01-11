@@ -6,8 +6,8 @@
   font-size: 18px;
 }
 
-.nav-item-2 {
-  width: 18px;
+.paginas {
+  font-size: 18px;
 }
 
 /*---Media querys---*/
@@ -27,8 +27,8 @@
     font-size: 16px;
   }
 
-  .nav-item-2 {
-    width: 16px;
+  .paginas {
+    font-size: 16px;
   }
 }
 
@@ -47,7 +47,7 @@
     font-size: 15px;
   }
 
-  .nav-item-2 {
-    width: 15px;
+  .paginas {
+    font-size: 15px;
   }
 }

@@ -26,17 +26,17 @@ const NavBar = () => {
                             <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false" activeclassname="page" >Obras</a>
                             <ul className="dropdown-menu mb-4">
-                                <NavLink className="dropdown-item nav-item-2" to={"/category/acrilico"}>
-                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item-2" alt="palette" />Acrílicos</NavLink>
+                                <NavLink className="dropdown-item nav-item" to={"/category/acrilico"}>
+                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item paginas" alt="palette" />Acrílicos</NavLink>
                                 <hr className="dropdown-divider" />
-                                <NavLink className="dropdown-item nav-item-2" to={"/category/acuarela"}>
-                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item-2" alt="palette" />Acuarelas</NavLink>
+                                <NavLink className="dropdown-item nav-item" to={"/category/acuarela"}>
+                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item paginas" alt="palette" />Acuarelas</NavLink>
                                 <hr className="dropdown-divider" />
-                                <NavLink className="dropdown-item nav-item-2" to={"/category/oleo"}>
-                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item-2" alt="palette" />Óleos</NavLink>
+                                <NavLink className="dropdown-item nav-item" to={"/category/oleo"}>
+                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item paginas" alt="palette" />Óleos</NavLink>
                                 <hr className="dropdown-divider" />
-                                <NavLink className="dropdown-item nav-item-2" to={"/category/tecnica-mixta"}>
-                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item-2" alt="palette" />Técnica mixta</NavLink>
+                                <NavLink className="dropdown-item nav-item" to={"/category/tecnica-mixta"}>
+                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item paginas" alt="palette" />Técnica mixta</NavLink>
                             </ul>
                         </li>
                     </ul>
