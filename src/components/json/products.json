@@ -7,7 +7,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura al óleo sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 30000,
     "image": "/images/obras/Alegria.jpg",
-    "stock": 3,
+    "stock": 5,
     "initial": 1
   },
 
@@ -31,7 +31,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura al óleo sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 20000,
     "image": "/images/obras/Delicadeza.jpg",
-    "stock": 2,
+    "stock": 7,
     "initial": 1
   },
 
@@ -43,7 +43,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura al óleo sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 20000,
     "image": "/images/obras/Emociones.jpg",
-    "stock": 3,
+    "stock": 4,
     "initial": 1
   },
 
@@ -55,7 +55,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura acrílica sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 35000,
     "image": "/images/obras/Fantasía.jpg",
-    "stock": 2,
+    "stock": 4,
     "initial": 1
   },
 
@@ -91,7 +91,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con pintura acrílicasobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 35000,
     "image": "/images/obras/Ideas.jpg",
-    "stock": 4,
+    "stock": 2,
     "initial": 1
   },
 
@@ -103,7 +103,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con técnica mixta sobre lienzo, la cual se conforma por la utilización de más de dos tipos de pinturas, como lo son el acrílico y el óleo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 45000,
     "image": "/images/obras/Infancia.jpg",
-    "stock": 6,
+    "stock": 3,
     "initial": 1
   },
 
@@ -115,7 +115,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con técnica mixta sobre lienzo, la cual se conforma por la utilización de más de dos tipos de pinturas, como lo son el acrílico y el óleo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 40000,
     "image": "/images/obras/Ingenuidad.jpg",
-    "stock": 3,
+    "stock": 9,
     "initial": 1
   },
 
@@ -127,7 +127,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con técnica mixta sobre lienzo, la cual se conforma por la utilización de más de dos tipos de pinturas, como lo son el acrílico y el óleo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 50000,
     "image": "/images/obras/Intensidad.jpg",
-    "stock": 4,
+    "stock": 5,
     "initial": 1
   },
 
@@ -139,7 +139,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con técnica mixta sobre lienzo, la cual se conforma por la utilización de más de dos tipos de pinturas, como lo son el acrílico y el óleo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 55000,
     "image": "/images/obras/Océano.jpg",
-    "stock": 5,
+    "stock": 8,
     "initial": 1
   },
 
@@ -151,7 +151,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con acuarelas sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 60000,
     "image": "/images/obras/Pasión.jpg",
-    "stock": 6,
+    "stock": 7,
     "initial": 1
   },
 
@@ -163,7 +163,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con acuarelas sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 60000,
     "image": "/images/obras/Pensamientos.jpg",
-    "stock": 4,
+    "stock": 5,
     "initial": 1
   },
 
@@ -175,7 +175,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con acuarelas sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 65000,
     "image": "/images/obras/Sinceridad.jpg",
-    "stock": 3,
+    "stock": 6,
     "initial": 1
   },
 
@@ -187,7 +187,7 @@
     "description": "La medida corresponde al ancho y largo de la misma. Es una obra realizada con acuarelas sobre lienzo. La obra se envía enmarcada y con su correspondiente certificado de autenticidad firmado por la artista Danna Blenk.",
     "price": 70000,
     "image": "/images/obras/Tranquilidad.jpg",
-    "stock": 5,
+    "stock": 7,
     "initial": 1
   }
 ]
