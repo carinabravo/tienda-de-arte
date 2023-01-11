@@ -5,9 +5,12 @@
 .nav-link {
   font-size: 18px;
 }
+
 .nav-item-2 {
   width: 18px;
 }
+
+/*---Media querys---*/
 
 @media screen and (max-width: 768px) {
   .img-logo {

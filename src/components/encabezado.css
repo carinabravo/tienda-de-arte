@@ -6,3 +6,17 @@
   color: #fffdfd;
   font-size: 12px;
 }
+
+/*---Media querys---*/
+
+@media screen and (max-width: 768px) {
+  .texto-encabezado {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .texto-encabezado {
+    font-size: 10px;
+  }
+}

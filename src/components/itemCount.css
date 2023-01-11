@@ -1,6 +1,6 @@
 .counter {
   justify-content: center;
-  align-items: center;
+  text-align: end;
 }
 
 .countTitulo {
@@ -14,7 +14,7 @@
   margin-left: 5px;
   background-color: #3483fa;
   color: #fffdfd;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .btnTres {
@@ -22,5 +22,47 @@
   margin: 4px 0 0 5px;
   background-color: #3483fa;
   color: #fffdfd;
-  font-size: 13px;
+  font-size: 14px;
+}
+
+/*---Media querys---*/
+
+@media screen and (max-width: 768px) {
+  .countTitulo {
+    font-size: 16px;
+  }
+
+  .btnUno,
+  .btnDos,
+  .countUno {
+    width: 43px;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+
+  .btnTres {
+    width: 140px;
+    margin: 4px 0 0 5px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .countTitulo {
+    font-size: 15px;
+  }
+
+  .btnUno,
+  .btnDos,
+  .countUno {
+    width: 40px;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+
+  .btnTres {
+    width: 130px;
+    margin: 4px 0 0 5px;
+    font-size: 12px;
+  }
 }

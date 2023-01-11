@@ -1,6 +1,22 @@
 .spinner {
-  width: 4rem;
-  height: 4rem;
-  color:#3483FA;
+  width: 5rem;
+  height: 5rem;
+  color: #3483fa;
   border-width: 3px;
+}
+
+/*---Media querys---*/
+
+@media screen and (max-width: 768px) {
+  .spinner {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .spinner {
+    width: 3rem;
+    height: 3rem;
+  }
 }

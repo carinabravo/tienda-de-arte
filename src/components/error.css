@@ -16,3 +16,33 @@
   background-color: #3483fa;
   font-size: 20px;
 }
+
+/*---Media querys---*/
+
+@media screen and (max-width: 768px) {
+  .img-error {
+    width: auto;
+  }
+
+  .text-error {
+    font-size: 23px;
+  }
+
+  .btn-error {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img-error {
+    width: auto;
+  }
+
+  .text-error {
+    font-size: 21px;
+  }
+
+  .btn-error {
+    font-size: 16px;
+  }
+}

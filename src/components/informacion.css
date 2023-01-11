@@ -9,3 +9,29 @@
 .text-informacion3 {
   text-align: justify;
 }
+
+/*---Media querys---*/
+
+@media screen and (max-width: 768px) {
+  .img-informacion {
+    width: auto;
+  }
+
+  .text-informacion1,
+  .text-informacion2,
+  .text-informacion3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img-informacion {
+    width: auto;
+  }
+
+  .text-informacion1,
+  .text-informacion2,
+  .text-informacion3 {
+    font-size: 14px;
+  }
+}

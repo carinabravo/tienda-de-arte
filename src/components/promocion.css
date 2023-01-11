@@ -1,4 +1,58 @@
 .promo {
   background: linear-gradient(270deg, #ffdb15 0%, #feaa00 100%);
-  box-shadow:0 10px 18px #9a9797;
+  box-shadow: 0 10px 18px #9a9797;
+}
+
+.lanzamiento-1 {
+  font-size: 22px;
+}
+
+.lanzamiento-2,
+.lanzamiento-3,
+.lanzamiento-4 {
+  font-size: 15px;
+}
+
+.check-1,
+.credit-1,
+.truck-1 {
+  width: 26px;
+}
+
+/*---Media querys---*/
+
+@media screen and (max-width: 768px) {
+  .lanzamiento-1 {
+    font-size: 18px;
+  }
+
+  .lanzamiento-2,
+  .lanzamiento-3,
+  .lanzamiento-4 {
+    font-size: 14px;
+  }
+
+  .check-1,
+  .credit-1,
+  .truck-1 {
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .lanzamiento-1 {
+    font-size: 17px;
+  }
+
+  .lanzamiento-2,
+  .lanzamiento-3,
+  .lanzamiento-4 {
+    font-size: 13px;
+  }
+
+  .check-1,
+  .credit-1,
+  .truck-1 {
+    width: 24px;
+  }
 }

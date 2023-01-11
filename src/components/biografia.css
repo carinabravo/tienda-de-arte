@@ -12,3 +12,46 @@
   font-size: 18px;
   text-align: justify;
 }
+
+.btn-navigate {
+  font-size: 30px;
+  color: #716e6e;
+}
+
+/*---Media querys---*/
+
+@media screen and (max-width: 768px) {
+  .img-perfil {
+    width: auto;
+  }
+
+  .title-perfil {
+    font-size: 25px;
+  }
+
+  .text-perfil {
+    font-size: 16px;
+  }
+
+  .btn-navigate {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img-perfil {
+    width: auto;
+  }
+
+  .title-perfil {
+    font-size: 21px;
+  }
+
+  .text-perfil {
+    font-size: 15px;
+  }
+
+  .btn-navigate {
+    font-size: 24px;
+  }
+}

@@ -1,6 +1,21 @@
+.logo-inicio-1 {
+  width: 18px;
+}
+
+.logo-persona-1 {
+  width: 17px;
+}
+
+.logo-t,
+.logo-i,
+.logo-f {
+  width: 28px;
+}
+
 .btn-suscription {
   background-color: #3483fa;
   padding: 4px 20px 4px 20px;
+  font-size: 17px;
 }
 
 .nav-NavLink {
@@ -11,4 +26,103 @@
   font-size: 18px;
   font-weight: bold;
   padding: 10px;
+}
+
+/*---Media querys---*/
+
+@media screen and (max-width: 768px) {
+  .seccion-titulo {
+    font-size: 18px;
+  }
+
+  .logo-inicio-1 {
+    width: 17px;
+  }
+
+  .logo-persona-1 {
+    width: 16px;
+  }
+
+  .redes {
+    justify-content: center;
+  }
+
+  .logo-t,
+  .logo-i,
+  .logo-f {
+    width: 22px;
+  }
+
+  .btn-suscription {
+    font-size: 16px;
+  }
+
+  .nav-NavLink {
+    font-size: 16px;
+  }
+
+  .titulo-suscripcion {
+    font-size: 18px;
+  }
+
+  .texto-suscripcion {
+    font-size: 15px;
+  }
+
+  .mensaje-exito {
+    font-size: 17px;
+  }
+
+  .derechos-texto {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .seccion-titulo {
+    font-size: 16px;
+  }
+
+  .logo-inicio-1 {
+    width: 16px;
+  }
+
+  .logo-persona-1 {
+    width: 15px;
+  }
+
+  .redes {
+    justify-content: center;
+  }
+
+  .logo-t,
+  .logo-i,
+  .logo-f {
+    width: 20px;
+  }
+
+  .btn-suscription {
+    font-size: 15px;
+  }
+
+  .nav-NavLink {
+    font-size: 14px;
+  }
+
+  .titulo-suscripcion {
+    font-size: 16px;
+  }
+
+  .texto-suscripcion {
+    font-size: 14px;
+  }
+
+  .mensaje-exito {
+    font-size: 16px;
+  }
+
+  .derechos-texto {
+    font-size: 15px;
+    justify-content: center;
+  }
 }

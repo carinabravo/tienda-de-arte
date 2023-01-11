@@ -1,7 +1,133 @@
 .btn-volver {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    padding: 4px 20px 4px 20px;
-    background-color: #3483fa;
-    font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 4px 20px 4px 20px;
+  background-color: #3483fa;
+  font-size: 20px;
+}
+
+.texto-carrito {
+  font-size: 20px;
+  color: #cc062e;
+}
+
+.alert-product {
+  width: auto;
+}
+
+.img-foto {
+  width: 80px;
+}
+
+.producto,
+.cantidad,
+.precio {
+  font-size: 17px;
+}
+
+.titulo-1,
+.cantidad-1,
+.precio-1 {
+  font-size: 16px;
+}
+
+.papelera-1 {
+  width: 19px;
+}
+
+.suma-total {
+  font-size: 18px;
+}
+
+.total-pago {
+  font-size: 18px;
+}
+
+/*---Media querys---*/
+
+@media screen and (max-width: 768px) {
+  .btn-volver {
+    font-size: 18px;
   }
- 
+
+  .texto-carrito {
+    font-size: 18px;
+  }
+
+  .img-foto {
+    width: 60px;
+  }
+
+  .producto,
+  .cantidad,
+  .precio {
+    font-size: 16px;
+  }
+
+  .btn-finalizar-compra,
+  .btn-limpiar {
+    width: auto;
+    font-size: 15px;
+  }
+
+  .titulo-1,
+  .cantidad-1,
+  .precio-1 {
+    font-size: 15px;
+  }
+
+  .papelera-1 {
+    width: 17px;
+  }
+
+  .suma-total {
+    font-size: 17px;
+  }
+
+  .total-pago {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-volver {
+    font-size: 16px;
+  }
+
+  .texto-carrito {
+    font-size: 16px;
+  }
+
+  .img-foto {
+    width: 45px;
+  }
+
+  .producto,
+  .cantidad,
+  .precio {
+    font-size: 14px;
+  }
+
+  .btn-finalizar-compra,
+  .btn-limpiar {
+    font-size: 13px;
+    padding: 6px 4px 6px 4px;
+  }
+
+  .titulo-1,
+  .cantidad-1,
+  .precio-1 {
+    font-size: 12px;
+  }
+
+  .papelera-1 {
+    width: 15px;
+  }
+
+  .suma-total {
+    font-size: 13px;
+  }
+
+  .total-pago {
+    font-size: 13px;
+  }
+}

@@ -28,8 +28,8 @@ const Biografia = () => {
                         de inspiración para aquellos que aman el arte.</p>
                 </div>
                 <div>
-                    <button className="btn me-5" type="submit" onClick={() => navigate(-1)}>
-                        <i className="bi bi-box-arrow-left" style={{ fontSize: "30px", color: "#716e6e" }}></i>
+                    <button className="btn btn-navigate me-5" type="submit" onClick={() => navigate(-1)}>
+                        <i className="bi bi-box-arrow-left"></i>
                     </button>
                 </div>
             </div>

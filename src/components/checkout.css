@@ -35,6 +35,8 @@
   color: #716e6e;
 }
 
+/*---Media querys---*/
+
 @media screen and (max-width: 768px) {
   .form-label {
     font-size: 14px;

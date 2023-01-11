@@ -10,6 +10,8 @@
   width: auto;
 }
 
+/*---Media querys---*/
+
 @media screen and (max-width: 768px) {
   .agradecimiento {
     font-size: 22px;

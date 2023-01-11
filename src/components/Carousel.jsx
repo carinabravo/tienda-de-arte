@@ -16,19 +16,19 @@ const Carousel = () => {
                         <div className="carousel-inner mt-2">
                             <div className="carousel-item active" data-bs-interval="4000">
                                 <img src="images/Danna Blenk/1.jpg" className="d-block w-100" alt="foto artista 1" />
-                                <div className="carousel-caption d-none d-md-block">
+                                <div className="carousel-caption d-none d-lg-block">
                                     <h3 className="texto-carousel"><b>TIENDA DE ARTE ABSTRACTO</b></h3>
                                 </div>
                             </div>
                             <div className="carousel-item" data-bs-interval="4000">
                                 <img src="images/Danna Blenk/2.jpg" className="d-block w-100" alt="foto artista 3" />
-                                <div className="carousel-caption d-none d-md-block">
+                                <div className="carousel-caption d-none d-lg-block">
                                     <h3 className="texto-carousel"><b>CADA OBRA ES ÚNICA</b></h3>
                                 </div>
                             </div>
                             <div className="carousel-item" data-bs-interval="4000" >
                                 <img src="images/Danna Blenk/3.jpg" className="d-block w-100" alt="foto artista 2" />
-                                <div className="carousel-caption d-none d-md-block">
+                                <div className="carousel-caption d-none d-lg-block">
                                     <h3 className='texto-carousel'><b>COMPRÁ ARTE ORIGINAL</b></h3>
                                 </div>
                             </div>

@@ -2,6 +2,8 @@
   width: 24px;
 }
 
+/*---Media querys---*/
+
 @media screen and (max-width: 768px) {
   .carrito-nav {
     width: 22px;

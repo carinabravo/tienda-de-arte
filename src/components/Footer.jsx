@@ -15,7 +15,7 @@ const Footer = () => {
         setMostrarMensaje(false)
       }, 3000)
     }
-    
+
   }, [state.succeeded])
 
   if (mostrarMensaje) {
@@ -23,7 +23,7 @@ const Footer = () => {
       <div className='container'>
         <div className='col-lg-6 col-md-6 col-sm-12 offset-md-3 px-5 py-5'>
           <div className='row text-center'>
-            <div className="alert alert-success mensaje-exito" role="alert">Suscripción exitosa!</div>
+            <div className="alert alert-primary mensaje-exito" role="alert">Suscripción exitosa!</div>
           </div>
         </div>
       </div>
@@ -34,23 +34,23 @@ const Footer = () => {
     <footer className="container">
       <div className="row">
         <div className="col-lg-7 col-md-5 col-sm-12 px-3 mb-3">
-          <h5>Sección</h5>
+          <h5 className='seccion-titulo'>Sección</h5>
           <ul className="nav flex-column mb-3">
             <li className="nav-item mb-1"><NavLink to={"/"} className="nav-NavLink px-0 text-muted text-decoration-none">
-              <img src={"images/logo e iconos/house.svg"} className="me-2" alt="house" width="18" />Inicio</NavLink >
+              <img src={"images/logo e iconos/house.svg"} className="me-2 logo-inicio-1" alt="house" />Inicio</NavLink >
             </li>
             <li className="nav-item"><NavLink to={"/biografia"} className="nav-NavLink px-0 text-muted text-decoration-none">
-              <img src={"images/logo e iconos/person-lines-fill.svg"} className="me-2" alt="person" width="17" />Biografía</NavLink >
+              <img src={"images/logo e iconos/person-lines-fill.svg"} className="me-2 logo-persona-1" alt="person" />Biografía</NavLink >
             </li>
           </ul>
         </div>
 
         <div className="col-lg-5 col-md-7 col-sm-12 mb-3 px-3">
           <form onSubmit={handleSubmit}>
-            <h5>Newsletter de Danna Blenk</h5>
-            <p>¡Suscribite y recibí todas las novedades!</p>
-            <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label htmlFor="email" className="visually-hidden">Dirección de Email</label>
+            <h5 className="titulo-suscripcion">Newsletter de Danna Blenk</h5>
+            <p className="texto-suscripcion" >¡Suscribite y recibí todas las novedades!</p>
+            <div className="d-flex flex-column flex-sm-row w-100 gap-2 ">
+              <label htmlFor="email" className="visually-hidden ">Dirección de Email</label>
               <input
                 id="email"
                 name="email"
@@ -69,17 +69,17 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p className="ms-3">© 2022 By Carina Bravo - All rights reserved.</p>
-        <div className="list-unstyled d-flex">
-          <a href="https://www.facebook.com/" className="me-3" >
-            <img src="images/logo e iconos/facebook.svg" alt="facebook" width="28" />
+      <div className="d-flex flex-column flex-sm-row justify-content-between py-md-4 my-4 border-top">
+        <p className="ms-1 derechos-texto">© 2022 By Carina Bravo - All rights reserved.</p>
+        <div className="list-unstyled d-flex redes">
+          <a href="https://www.facebook.com/" className="me-2" >
+            <img className="logo-f" src="images/logo e iconos/facebook.svg" alt="facebook" />
           </a>
-          <a href="https://twitter.com/" className="me-3"  >
-            <img src="images/logo e iconos/twitter.svg" alt="twitter" width="28" />
+          <a href="https://twitter.com/" className="me-2"  >
+            <img className="logo-t" src="images/logo e iconos/twitter.svg" alt="twitter" />
           </a>
-          <a href="https://www.instagram.com/" className="me-3" >
-            <img src="images/logo e iconos/instagram.svg" alt="instagram" width="28" />
+          <a href="https://www.instagram.com/" className="me-2" >
+            <img className="logo-i" src="images/logo e iconos/instagram.svg" alt="instagram" />
           </a>
         </div>
       </div>

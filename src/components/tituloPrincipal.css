@@ -6,6 +6,8 @@
   font-size: 18px;
 }
 
+/*---Media querys---*/
+
 @media screen and (max-width: 768px) {
   .titulo-principal {
     font-size: 25px;

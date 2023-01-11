@@ -1,13 +1,14 @@
+import './navbar.css';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import CartWidget from './CartWidget';
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-md mt-4 mb-4">
+        <nav className="navbar navbar-expand-md mt-4 mb-1">
             <div className="container">
                 <Link className="navbar-brand" to={"/"}>
-                    <img className="img-fluid mb-4" src={"images/logo e iconos/logo.jpg"} alt="logo" width={350} />
+                    <img className="img-fluid img-logo mb-4" src={"images/logo e iconos/logo.jpg"} alt="logo" />
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,21 +26,17 @@ const NavBar = () => {
                             <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false" activeclassname="page" >Obras</a>
                             <ul className="dropdown-menu mb-4">
-                                <NavLink className="dropdown-item" to={"/category/acrilico"}>
-                                    <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette"
-                                        width="18" />Acrílicos</NavLink>
+                                <NavLink className="dropdown-item nav-item-2" to={"/category/acrilico"}>
+                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item-2" alt="palette" />Acrílicos</NavLink>
                                 <hr className="dropdown-divider" />
-                                <NavLink className="dropdown-item" to={"/category/acuarela"}>
-                                    <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette"
-                                        width="18" />Acuarelas</NavLink>
+                                <NavLink className="dropdown-item nav-item-2" to={"/category/acuarela"}>
+                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item-2" alt="palette" />Acuarelas</NavLink>
                                 <hr className="dropdown-divider" />
-                                <NavLink className="dropdown-item" to={"/category/oleo"}>
-                                    <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette"
-                                        width="18" />Óleos</NavLink>
+                                <NavLink className="dropdown-item nav-item-2" to={"/category/oleo"}>
+                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item-2" alt="palette" />Óleos</NavLink>
                                 <hr className="dropdown-divider" />
-                                <NavLink className="dropdown-item" to={"/category/tecnica-mixta"}>
-                                    <img src={"images/logo e iconos/palette.svg"} className="me-2" alt="palette"
-                                        width="18" />Técnica mixta</NavLink>
+                                <NavLink className="dropdown-item nav-item-2" to={"/category/tecnica-mixta"}>
+                                    <img src={"images/logo e iconos/palette.svg"} className="me-2 nav-item-2" alt="palette" />Técnica mixta</NavLink>
                             </ul>
                         </li>
                     </ul>
@@ -47,7 +44,7 @@ const NavBar = () => {
                 <div className="align-items-center justify-content-end"><CartWidget /></div>
             </div>
         </nav>
-       
+
 
     )
 }

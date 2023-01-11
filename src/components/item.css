@@ -6,20 +6,54 @@
 .card {
   width: 290px;
   height: 420px;
-  box-shadow:0 20px 18px #9a9797;
+  box-shadow: 0 20px 18px #9a9797;
 }
 
 .card-title {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .card-price {
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 21px;
 }
 
 .btn-card {
   margin-top: 10px;
   width: 180px;
   background-color: #3483fa;
+}
+
+.btn-ver {
+  font-size: 17px;
+}
+
+/*---Media querys---*/
+
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-price {
+    font-size: 19px;
+  }
+
+  .btn-ver {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-title {
+    font-size: 15px;
+  }
+
+  .card-price {
+    font-size: 18px;
+  }
+
+  .btn-ver {
+    font-size: 15px;
+  }
 }
