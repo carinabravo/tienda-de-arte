@@ -15,7 +15,7 @@
 .btn-suscription {
   background-color: #3483fa;
   padding: 4px 20px 4px 20px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .nav-NavLink {
@@ -54,7 +54,7 @@
   }
 
   .btn-suscription {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .nav-NavLink {
@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 480px) {
   .seccion-titulo {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .logo-inicio-1 {
@@ -102,19 +102,19 @@
   }
 
   .btn-suscription {
-    font-size: 15px;
-  }
-
-  .nav-NavLink {
-    font-size: 14px;
-  }
-
-  .titulo-suscripcion {
     font-size: 16px;
   }
 
+  .nav-NavLink {
+    font-size: 15px;
+  }
+
+  .titulo-suscripcion {
+    font-size: 17px;
+  }
+
   .texto-suscripcion {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .mensaje-exito {

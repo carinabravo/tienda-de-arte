@@ -6,12 +6,12 @@
 
 @media screen and (max-width: 768px) {
   .carrito-nav {
-    width: 22px;
+    width: 23px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .carrito-nav {
-    width: 20px;
+    width: 21px;
   }
 }

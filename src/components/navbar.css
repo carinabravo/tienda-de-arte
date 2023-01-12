@@ -24,17 +24,17 @@
   }
 
   .nav-link {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .paginas {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .img-logo {
-    width: 220px;
+    width: 224px;
   }
 
   .navbar-toggler-icon {
@@ -44,10 +44,10 @@
   }
 
   .nav-link {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .paginas {
-    font-size: 15px;
+    font-size: 16px;
   }
 }

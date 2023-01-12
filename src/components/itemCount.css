@@ -35,15 +35,15 @@
   .btnUno,
   .btnDos,
   .countUno {
-    width: 43px;
+    width: 44px;
     margin-left: 5px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .btnTres {
-    width: 140px;
+    width: 142px;
     margin: 4px 0 0 5px;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -55,14 +55,14 @@
   .btnUno,
   .btnDos,
   .countUno {
-    width: 40px;
+    width: 41px;
     margin-left: 5px;
     font-size: 13px;
   }
 
   .btnTres {
-    width: 130px;
+    width: 135px;
     margin: 4px 0 0 5px;
-    font-size: 12px;
+    font-size: 13px;
   }
 }

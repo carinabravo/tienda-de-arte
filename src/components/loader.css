@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 480px) {
   .spinner {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
   }
 }
