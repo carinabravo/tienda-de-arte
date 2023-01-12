@@ -39,19 +39,19 @@
 
 @media screen and (max-width: 768px) {
   .form-label {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .form-control {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .error {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .generar-orden {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .img-foto-2 {
@@ -61,7 +61,7 @@
   .titulo-tabla-2,
   .cantidad-tabla-2,
   .cantidad-tabla-3 {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .total-pago-2,
@@ -70,42 +70,42 @@
   }
 
   .btn-navigate {
-    font-size: 26px;
+    font-size: 27px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .form-label {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .form-control {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .error {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .generar-orden {
-    font-size: 14px;
+    font-size: 15px;
   }
   .img-foto-2 {
-    width: 45px;
+    width: 46px;
   }
 
   .titulo-tabla-2,
   .cantidad-tabla-2,
   .cantidad-tabla-3 {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .total-pago-2,
   .suma-total-2 {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .btn-navigate {
-    font-size: 24px;
+    font-size: 25px;
   }
 }
