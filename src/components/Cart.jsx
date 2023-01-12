@@ -10,7 +10,7 @@ const Cart = () => {
     if (cartTotal() === 0) {
         return (
             <div className="container">
-                <div className="row py-5 md-px-5" >
+                <div className="row py-5" >
                     <div className="col-lg-6 col-md-12 col-sm-12 offset-lg-3 text-center px-5 mb-5">
                         <div className="alert alert-product alert-danger" role="alert">
                             <h1 className="m-1 texto-carrito "><b>Tu carrito de compras se encuentra vacío!</b></h1>
