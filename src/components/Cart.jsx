@@ -11,9 +11,9 @@ const Cart = () => {
         return (
             <div className="container">
                 <div className="row py-5 md-px-5" >
-                    <div className="col-lg-6 col-md-8 col-sm-12 offset-md-3 text-center mb-5">
+                    <div className="col-lg-6 col-md-12 col-sm-12 offset-lg-3 text-center px-5 mb-5">
                         <div className="alert alert-product alert-danger" role="alert">
-                            <h1 className="m-2 texto-carrito "><b>Tu carrito de compras se encuentra vacío!</b></h1>
+                            <h1 className="m-1 texto-carrito "><b>Tu carrito de compras se encuentra vacío!</b></h1>
                         </div>
                         <div>
                             <Link to={"/"} className="btn btn-volver btn-primary mt-2">Volver a la página principal</Link>
