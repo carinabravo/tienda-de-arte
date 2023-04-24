@@ -15,12 +15,14 @@
 @media screen and (max-width: 768px) {
   .img-logo {
     width: 280px;
+    padding-top: 10px;
   }
 
   .navbar-toggler-icon {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     background-size: 100%;
+    padding: 10px;
   }
 
   .nav-link {
@@ -34,13 +36,15 @@
 
 @media screen and (max-width: 480px) {
   .img-logo {
-    width: 224px;
+    width: 225px;
+    padding-top: 10px;
   }
 
   .navbar-toggler-icon {
     width: 13px;
     height: 13px;
-    background-size: 80%;
+    background-size: 85%;
+    padding: 10px;
   }
 
   .nav-link {
