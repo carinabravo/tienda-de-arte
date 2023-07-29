@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 import { useForm, ValidationError } from '@formspree/react';
 import { useEffect, useState } from 'react';
 
-
 const Footer = () => {
   const footerRef = useRef(null);
   const [state, handleSubmit] = useForm("xrgdqqpr");
@@ -56,7 +55,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
 
         <div className="col-lg-5 col-md-7 col-sm-12 mb-3 px-3">
           <form onSubmit={handleSubmit}>
