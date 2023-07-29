@@ -1,10 +1,12 @@
 import './itemDetail.css';
 import React, { useState, useEffect, useContext } from 'react';
+import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ItemCount from './ItemCount';
 import { CartContext } from './context/CartContext';
 
 const ItemDetail = ({ item }) => {
+    const ItemDetailRef = useRef(null);
     const navigate = useNavigate();
     const { addItem } = useContext(CartContext);
     const [itemStock, setItemStock] = useState(0);
@@ -19,8 +21,24 @@ const ItemDetail = ({ item }) => {
 
     }, [item]);
 
+
+
+
+
+    const scrollToTop = () => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
+
+
+
+
     return (
-        <div className="row">
+        <div className="row" ref={ItemDetailRef}>
             <div className="col-lg-5 col-md-5 col-sm-12 offset-md-1">
                 <img src={item.image} alt={item.title} className="img-unica img-fluid mb-4" />
             </div>
@@ -32,7 +50,10 @@ const ItemDetail = ({ item }) => {
                 <ItemCount stock={item.stock} onAdd={onAdd} />
             </div>
             <div>
-                <button className="btn me-5 btn-navigate" type="submit" onClick={() => navigate(-1)}>
+                <button className="btn me-5 btn-navigate" type="submit" onClick={() => {
+                    navigate(-1);
+                    scrollToTop();
+                }}>
                     <i className="bi bi-box-arrow-left"></i>
                 </button>
             </div>
@@ -41,5 +62,4 @@ const ItemDetail = ({ item }) => {
 }
 
 export default ItemDetail;
-
 
