@@ -1,3 +1,11 @@
+# 🎨 Tienda de arte
+
+### Description 
+
+#### Tienda de cuadros originales de arte abstracto en óleo, de la artista Danna Blenk.
+
+✔ Página web.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
