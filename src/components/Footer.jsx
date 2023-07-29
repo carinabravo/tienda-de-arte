@@ -1,10 +1,13 @@
 import './footer.css';
 import React from 'react';
+import { useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 import { useForm, ValidationError } from '@formspree/react';
 import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+
 
 const Footer = () => {
+  const footerRef = useRef(null);
   const [state, handleSubmit] = useForm("xrgdqqpr");
   const [mostrarMensaje, setMostrarMensaje] = useState(false);
 
@@ -17,6 +20,14 @@ const Footer = () => {
     }
 
   }, [state.succeeded])
+
+  const scrollToTop = () => {
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   if (mostrarMensaje) {
     return (
@@ -31,19 +42,21 @@ const Footer = () => {
   }
 
   return (
-    <footer className="container">
+    <footer className="container" ref={footerRef}>
       <div className="row">
         <div className="col-lg-7 col-md-5 col-sm-12 px-3 mb-3">
           <h5 className='seccion-titulo'>Sección</h5>
           <ul className="nav flex-column mb-3">
-            <li className="nav-item mb-1"><NavLink to={"/"} className="nav-NavLink px-0 text-muted text-decoration-none">
-              <img src={"images/logo e iconos/house.svg"} className="me-2 logo-inicio-1" alt="house" />Inicio</NavLink >
+            <li className="nav-item mb-1">
+              <NavLink to={"/"} className="nav-NavLink px-0 text-muted text-decoration-none" onClick={scrollToTop}>
+                <img src={"images/logo e iconos/house.svg"} className="me-2 logo-inicio-1" alt="house" />Inicio</NavLink >
             </li>
-            <li className="nav-item"><NavLink to={"/biografia"} className="nav-NavLink px-0 text-muted text-decoration-none">
+            <li className="nav-item"><NavLink to={"/biografia"} className="nav-NavLink px-0 text-muted text-decoration-none" onClick={scrollToTop}>
               <img src={"images/logo e iconos/person-lines-fill.svg"} className="me-2 logo-persona-1" alt="person" />Biografía</NavLink >
             </li>
           </ul>
         </div>
+
 
         <div className="col-lg-5 col-md-7 col-sm-12 mb-3 px-3">
           <form onSubmit={handleSubmit}>
@@ -89,3 +102,13 @@ const Footer = () => {
 }
 
 export default Footer;
+
+
+
+
+
+
+
+
+
+
