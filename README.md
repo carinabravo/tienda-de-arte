@@ -4,7 +4,7 @@
 
 #### Tienda de cuadros originales de arte abstracto en óleo, de la artista Danna Blenk.
 
-✔ Página web.
+✔ Ecommerce.
 
 # Getting Started with Create React App
 
