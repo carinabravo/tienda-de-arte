@@ -1,4 +1,4 @@
-# 🎨🛒 Tienda de arte
+# 🛒 Tienda de arte
 
 ### Description 
 
