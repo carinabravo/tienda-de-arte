@@ -2,7 +2,7 @@
 
 ### Description 
 
-#### Tienda online de cuadros originales de arte abstracto en óleo, de la artista Danna Blenk.
+#### Tienda de cuadros originales de arte abstracto en óleo, de la artista Danna Blenk.
 
 ✔ Tienda online.
 
