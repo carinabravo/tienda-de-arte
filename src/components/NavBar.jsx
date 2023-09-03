@@ -6,7 +6,7 @@ import CartWidget from './CartWidget';
 const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-md mt-4 mb-1">
-            <div className="container">
+    <div className="container">
                 <Link className="navbar-brand" to={"/"}>
                     <img className="img-fluid img-logo mb-4" src={"images/logo e iconos/logo.jpg"} alt="logo" />
                 </Link>

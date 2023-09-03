@@ -13,6 +13,9 @@
 /*---Media querys---*/
 
 @media screen and (max-width: 768px) {
+.row{
+  justify-content: center;
+}
   .agradecimiento {
     font-size: 22px;
   }
